@@ -4,22 +4,29 @@ import { FaCartArrowDown } from "react-icons/fa";
 import { IoSearch } from "react-icons/io5";
 import { RiAdminFill } from "react-icons/ri";
 import logo from "../assets/logo_watchcraft.webp";
+import Sidebar from "./Sidebar";
 const Navbar = () => {
-  const[isopen, setIsOpen] = useState(false)
+  const[isOpen, setIsOpen] = useState(false);
+
+  const toggleSidebar = () => {
+    setIsOpen(!isOpen);
+  };
+
   return (
-    <div className="p-3 flex items-center justify-between bg-bgcolor">
+    <>
+    <div className="p-3 flex items-center justify-between bg-primary border-b border-[#2d2926] shadow-md ">
       <div className="flex items-center flex-row-reverse justify-between w-[55%] lg:w-auto">
         <img className="h-10 sm:h-12 md:h-16" src={logo} alt="Brand logo" />
 
         <div className="flex lg:hidden items-center justify-center  h-5 w-5 p-5 md:h-6 md:w-6 md:p-5 hover:bg-secondary duration-500 ease-out shadow-md rounded-full bg-white">
           <span>
-            <BiMenu className="hover:opacity-55 duration-1000 cursor-pointer text-2xl" />
+            <BiMenu onClick={toggleSidebar} className="hover:opacity-55 duration-1000 cursor-pointer text-2xl" />
           </span>
         </div>
       </div>
 
       <div className={`relative hidden lg:flex items-center justify-between gap-6 uppercase font-navfont text-xl text-gray-800`}>
-        <span className="relative group cursor-pointer">
+        <span className="relative group cursor-pointer text-textcolor">
           Home
           <div className="absolute left-0 bottom-0 w-0 h-[2px] bg-secondary transition-all duration-300 group-hover:w-full"></div>
         </span>
@@ -27,15 +34,15 @@ const Navbar = () => {
           Collection
           <div className="absolute left-0 bottom-0 w-0 h-[2px] bg-secondary transition-all duration-300 group-hover:w-full"></div>
         </span>
-        <span className="relative group cursor-pointer">
+        <span className="relative group cursor-pointer text-textcolor">
           Gift Cards
           <div className="absolute left-0 bottom-0 w-0 h-[2px] bg-secondary transition-all duration-300 group-hover:w-full"></div>
         </span>
-        <span className="relative group cursor-pointer">
+        <span className="relative group cursor-pointer text-textcolor">
           Wholesale
           <div className="absolute left-0 bottom-0 w-0 h-[2px] bg-secondary transition-all duration-300 group-hover:w-full"></div>
         </span>
-        <span className="relative group cursor-pointer">
+        <span className="relative group cursor-pointer text-textcolor">
           AboutUs
           <div className="absolute left-0 bottom-0 w-0 h-[2px] bg-secondary transition-all duration-300 group-hover:w-full"></div>
         </span>
@@ -62,6 +69,12 @@ const Navbar = () => {
         </div>
       </div>
     </div>
+
+
+    {/* Sidebar */}
+    <Sidebar toggleSidebar={toggleSidebar} isOpen={isOpen} />
+
+  </>
   );
 };
 

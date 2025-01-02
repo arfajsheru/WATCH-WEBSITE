@@ -10,7 +10,7 @@ export default {
         // Yaha custom color define karein
         primary: '#d6e6ff', // Example: Dark blue shade
         secondary: '#c54628', // Example: Purple shade
-        bgcolor: '#ad954f', // Example: Amber shade
+        textcolor: '#2d2926', // Example: Amber shade
       },
       fontFamily: {
         navfont: '"Kanit", serif',

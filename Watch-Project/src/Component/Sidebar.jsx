@@ -3,7 +3,7 @@ import { RiMenu2Line } from "react-icons/ri";
 import { RiAdminFill } from "react-icons/ri";
 import { NavLink } from "react-router-dom";
 import { useContext } from "react";
-import { ShopContext } from "../Context/shopContext";
+import { ShopContext } from "../Context/ContextShop";
 import { IoIosArrowForward } from "react-icons/io";
 const Sidebar = ({ toggleSidebar, isOpen }) => {
   const [activeTab, setActiveTab] = useState("menu");

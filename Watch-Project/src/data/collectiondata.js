@@ -5,8 +5,3 @@ export const collectionTypes = {
     Shapes: ["Round", "Square", "Rectangular", "Oval", "Hexagonal", "Diamond", "Tonneau"],
     SmartWatchBrands: ["Apple", "Samsung", "Garmin", "Fitbit", "Fossil", "Huawei", "Amazfit", "Realme"],
   };
-
-
-export const Abouttypes = {
-    
-}

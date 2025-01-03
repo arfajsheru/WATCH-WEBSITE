@@ -2,12 +2,10 @@ import React, { useState } from "react";
 import { RiMenu2Line } from "react-icons/ri";
 import { RiAdminFill } from "react-icons/ri";
 import { NavLink } from "react-router-dom";
-import { useContext } from "react";
-import { ShopContext } from "../Context/ContextShop";
 import { IoIosArrowForward } from "react-icons/io";
+import { collectionTypes } from "../data/collectiondata";
 const Sidebar = ({ toggleSidebar, isOpen }) => {
   const [activeTab, setActiveTab] = useState("menu");
-  const { collectionTypes } = useContext(ShopContext);
   const [collopen, setCollOpen] = useState(false);
   const [aboutopen, setAboutOpen] = useState(false);
   const [categoryOpen, setCategoryOpen] = useState({});

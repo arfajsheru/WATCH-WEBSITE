@@ -70,7 +70,7 @@ const Sidebar = ({ toggleSidebar, isOpen }) => {
                     {/* Har category ko ek unique key dena */}
                     <div className="">
                       <h3
-                        className="flex items-center justify-between font-medium mt-4 mb-2 hover:text-primary duration-500 cursor-pointer bg-secondary border border-black rounded-sm"
+                        className="flex items-center justify-between font-medium mt-4 pl-2 mb-2 hover:text-primary duration-500 cursor-pointer bg-secondary border border-black rounded-sm shadow-md hover:shadow-lg"
                         onClick={() => toggleCategory(category)} // Toggle the specific category
                       >
                         {category}

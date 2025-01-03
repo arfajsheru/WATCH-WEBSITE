@@ -14,6 +14,7 @@ export default {
       },
       fontFamily: {
         navfont: '"Kanit", serif',
+        font2: '"Kanit", serif',
       }
     },
   },

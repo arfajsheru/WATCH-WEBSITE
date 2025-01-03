@@ -5,6 +5,7 @@ import { IoSearch } from "react-icons/io5";
 import { RiAdminFill } from "react-icons/ri";
 import logo from "../assets/logo_watchcraft.webp";
 import Sidebar from "./Sidebar";
+import {NavLink} from "react-router-dom"
 const Navbar = () => {
   const[isOpen, setIsOpen] = useState(false);
 
@@ -26,26 +27,26 @@ const Navbar = () => {
       </div>
 
       <div className={`relative hidden lg:flex items-center justify-between gap-6 uppercase font-navfont text-xl text-gray-800`}>
-        <span className="relative group cursor-pointer text-textcolor">
+        <NavLink to={'/'} className="relative group cursor-pointer text-textcolor">
           Home
           <div className="absolute left-0 bottom-0 w-0 h-[2px] bg-secondary transition-all duration-300 group-hover:w-full"></div>
-        </span>
-        <span className="relative group cursor-pointer">
+        </NavLink>
+        <NavLink to={'/collection'} className="relative group cursor-pointer">
           Collection
           <div className="absolute left-0 bottom-0 w-0 h-[2px] bg-secondary transition-all duration-300 group-hover:w-full"></div>
-        </span>
-        <span className="relative group cursor-pointer text-textcolor">
+        </NavLink>
+        <NavLink to={'/giftcards'} className="relative group cursor-pointer text-textcolor">
           Gift Cards
           <div className="absolute left-0 bottom-0 w-0 h-[2px] bg-secondary transition-all duration-300 group-hover:w-full"></div>
-        </span>
-        <span className="relative group cursor-pointer text-textcolor">
+        </NavLink>
+        <NavLink to={'/wholesale'} className="relative group cursor-pointer text-textcolor">
           Wholesale
           <div className="absolute left-0 bottom-0 w-0 h-[2px] bg-secondary transition-all duration-300 group-hover:w-full"></div>
-        </span>
-        <span className="relative group cursor-pointer text-textcolor">
+        </NavLink>
+        <NavLink to={'/aboutus'} className="relative group cursor-pointer text-textcolor">
           AboutUs
           <div className="absolute left-0 bottom-0 w-0 h-[2px] bg-secondary transition-all duration-300 group-hover:w-full"></div>
-        </span>
+        </NavLink>
       </div>
 
       <div className="flex items-center justify-between gap-4 sm:gap-6 md:gap-8">

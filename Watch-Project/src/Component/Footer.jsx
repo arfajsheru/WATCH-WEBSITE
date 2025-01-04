@@ -1,38 +1,43 @@
-import React from 'react'
-
+import React from "react";
+import footerlogo from "../assets/footerlogo.webp";
+import { Link } from "react-router";
 const Footer = () => {
   return (
-    <footer className="bg-secondary py-10 text-white">
-  <div className="container mx-auto">
-    {/* <div className="flex flex-col md:flex-row justify-between items-center space-y-6 md:space-y-0">
-      
-      <div className="flex justify-center items-center space-x-4">
-        <img src="your-logo.png" alt="Logo" className="h-12 w-auto transform transition-transform duration-300 hover:scale-110" />
-        <span className="text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-white to-primary">
-          YourBrandName
-        </span>
-      </div>
-      
-      <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-8 text-center md:text-left">
-        <a href="#home" className="transition-transform transform hover:scale-105">Home</a>
-        <a href="#shop" className="transition-transform transform hover:scale-105">Shop</a>
-        <a href="#about" className="transition-transform transform hover:scale-105">About</a>
-        <a href="#contact" className="transition-transform transform hover:scale-105">Contact</a>
-      </div>
+    <footer className="bg-gray-900 text-white py-10 px-5">
+      <div className="flex gap-4">
+      <div className="space-y-6">
+        <div className="space-y-2">
+          <h3 className="font-semibold text-lg ">INFORMATION</h3>
+          <hr className="bg-white w-24" />
+        </div>
+          <ul className="space-y-3 uppercase">
+            <li><a href="#about" className=" transition-colors">About Us</a></li>
+            <li><a href="#contact" className=" transition-colors">Contact Us</a></li>
+            <li><a href="#privacy" className=" transition-colors">Privacy Policy</a></li>
+            <li><a href="#terms" className=" transition-colors">Terms & Conditions</a></li>
+          </ul>
+        </div>
 
-      <div className="flex space-x-6">
-        <a href="#" className="text-2xl transition-colors duration-300 hover:text-white"><i className="fab fa-facebook-f"></i></a>
-        <a href="#" className="text-2xl transition-colors duration-300 hover:text-white"><i className="fab fa-twitter"></i></a>
-        <a href="#" className="text-2xl transition-colors duration-300 hover:text-white"><i className="fab fa-instagram"></i></a>
+        <div className="space-y-6">
+        <div className="space-y-2">
+          <h3 className="font-semibold text-lg ">MORE LINKS</h3>
+          <hr className="bg-white w-24" />
+        </div>
+          <ul className="space-y-3 uppercase">
+            <li><a href="#about" className=" transition-colors">faq</a></li>
+            <li><a href="#contact" className=" transition-colors">waranty & repaires</a></li>
+            <li><a href="#privacy" className=" transition-colors">shipping & insurance</a></li>
+            <li><a href="#terms" className=" transition-colors">Terms & service</a></li>
+            <li><a href="#terms" className=" transition-colors">contact us</a></li>
+          </ul>
+        </div>
+
+        <div className="">
+          <img src={footerlogo} alt="Logo" className="w-24" />
+        </div>
       </div>
-    </div> */}
+    </footer>
+  );
+};
 
-    <div className="text-center">
-      <p className="text-sm opacity-75">© 2025 YourBrandName. All rights reserved.</p>
-    </div>
-  </div>
-</footer>
-  )
-}
-
-export default Footer
+export default Footer;

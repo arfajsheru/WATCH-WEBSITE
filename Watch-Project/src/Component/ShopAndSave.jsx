@@ -3,7 +3,7 @@ import banner from "../assets/banner.jpg";
 
 const ShopAndSave = () => {
   return (
-    <div className="relative mb-5">
+    <div className="relative shadow-xs">
       {/* Image */}
       <img
         src={banner}

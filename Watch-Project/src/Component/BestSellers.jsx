@@ -43,30 +43,30 @@ const BestSellers = () => {
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-5 overflow-hidden">
         {/* Render filtered items based on selected category */}
         {filteredItems.slice(0, 5).map((item) => (
-          <div
-            key={item.id}
-            className="overflow-hidden border-2 border-secondary p-2 rounded-sm shadow-lg bg-[#ffffff] cursor-pointer"
-          >
-            <img
-              src={item.image}
-              alt={item.title}
-              className="w-full h-40 object-cover transition-transform transform hover:scale-105"
-            />
-            <div className="p-4">
-              <h2 className="text-xl font-bold text-gray-700 hover:text-secondary transition-colors duration-300">
-                {item.title}
-              </h2>
-              <p className="text-gray-600 text-sm mb-2">{item.description}</p>
-              <div className="flex justify-between items-center">
-                <span className="text-lg font-semibold text-gray-800">
-                  {item.price}
-                </span>
-                <button className="bg-gradient-to-r from-primary to-secondary text-white font-navfont px-4 py-2 rounded-sm text-sm sm:text-base font-normal transition-all duration-300 focus:outline-none focus:ring-1 focus:ring-black">
-                  Buy Now
-                </button>
-              </div>
-            </div>
+        <div
+        key={item.id}
+        className="overflow-hidden border-2  border-secondary flex flex-col justify-between p-2 rounded-sm shadow-md bg-white cursor-pointer transition-all duration-300 ease-in-out hover:shadow-xl"
+      >
+        <img
+          src={item.image}
+          alt={item.title}
+          className="w-full h-40 object-cover mb-3"
+        />
+        <div className="p-4">
+          <h2 className="text-xl mb-3 font-font4 text-gray-800 hover:text-secondary transition-colors duration-300">
+            {item.title}
+          </h2>
+          <p className="text-gray-600 text-sm font-medium mb-2">{item.description}</p>
+          <div className="flex justify-between items-center">
+            <span className="text-lg font-semibold text-gray-800">
+              {item.price}
+            </span>
+            <button className="bg-gradient-to-r from-primary to-secondary text-white font-navfont px-4 py-2 rounded-sm text-sm sm:text-base font-normal transition-all duration-300 focus:outline-none focus:ring-1 focus:ring-black">
+              Buy Now
+            </button>
           </div>
+        </div>
+      </div>
         ))}
       </div>
     </div>

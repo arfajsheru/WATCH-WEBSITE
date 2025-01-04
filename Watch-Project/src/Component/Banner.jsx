@@ -16,19 +16,23 @@ import { IoIosStar, IoMdArrowDropleftCircle } from "react-icons/io";
 
 const Banner = () => {
   return (
-    <div className="relative">
+    <div className="relative shadow-md md:shadow-xl mb-6 md:mb-8">
       <Swiper
-        spaceBetween={30}
-        effect={"fade"}
-        navigation={{
-          prevEl: ".custom-prev",
-          nextEl: ".custom-next",
-        }}
-        modules={[EffectFade, Navigation, Pagination]}
-        autoplay={{ delay: 5000 }} // Increase delay to slow down autoplay
-        loop={true} // Infinite loop slider
-        speed={1500} // Set speed to slow down transition
-        className="mySwiper"
+      spaceBetween={30}
+      effect={"fade"}
+      navigation={{
+        prevEl: ".custom-prev",
+        nextEl: ".custom-next",
+      }}
+      modules={[EffectFade, Navigation, Pagination]}
+      autoplay={{
+        delay: 3000, // Adjusted delay to 3000ms (3 seconds)
+        disableOnInteraction: false, // Ensures autoplay doesn't stop on interaction
+      }}
+      loop={true} // Infinite loop slider
+      speed={1000} // Set speed to a reasonable value for smooth transitions
+      className="mySwiper"
+    
       >
         {bannerList.map((banner) => (
           <SwiperSlide key={banner._id}>
@@ -38,7 +42,7 @@ const Banner = () => {
                 alt="banner"
                 className="object-cover brightness-50 w-full h-full md:h-[88vh] lg:h-[90vh]"
               />
-                <div className="absolute inset-0 bg-black bg-opacity-10 flex flex-col justify-center text-center items-center p-10 sm:p-40">
+              <div className="absolute inset-0 bg-black bg-opacity-10 flex flex-col justify-center text-center items-center p-10 sm:p-60">
                 <h1 className="text-white text-lg font-font3 sm:text-4xl font-bold mb-2">
                   {banner.title1}
                 </h1>
@@ -54,8 +58,8 @@ const Banner = () => {
                   )}
                 </div>
                 <button className="bg-gradient-to-r from-primary to-secondary text-white font-navfont  px-6 py-3 rounded-lg text-sm sm:text-base font-normal transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-primary">
-  {banner.buttonText}
-</button>
+                  {banner.buttonText}
+                </button>
               </div>
             </div>
           </SwiperSlide>

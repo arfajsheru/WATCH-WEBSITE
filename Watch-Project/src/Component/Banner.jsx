@@ -31,7 +31,7 @@ const Banner = () => {
       >
         {bannerList.map((banner) => (
           <SwiperSlide key={banner._id}>
-            <div className="relative w-full h-[30vh] md:h-[80vh] lg:h-[90vh]">
+            <div className="relative w-full h-[30vh] md:h-[80vh] lg:h-[85vh]">
               <img
                 src={banner.imgUrl}
                 alt="banner"

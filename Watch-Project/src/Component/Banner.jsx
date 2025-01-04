@@ -11,7 +11,8 @@ import "swiper/css/pagination";
 // import required modules
 import { EffectFade, Navigation, Pagination } from "swiper/modules";
 // Import React Icons
-import { IoMdArrowDropleftCircle } from "react-icons/io";
+import { FaStarHalfStroke } from "react-icons/fa6";
+import { IoIosStar, IoMdArrowDropleftCircle } from "react-icons/io";
 
 const Banner = () => {
   return (
@@ -37,16 +38,35 @@ const Banner = () => {
                 alt="banner"
                 className="object-cover brightness-50 w-full h-full md:h-[88vh] lg:h-[90vh]"
               />
+                <div className="absolute inset-0 bg-black bg-opacity-10 flex flex-col justify-center text-center items-center p-10 sm:p-40">
+                <h1 className="text-white text-lg font-font3 sm:text-4xl font-bold mb-2">
+                  {banner.title1}
+                </h1>
+                <h2 className="text-white text-sm font-font4 sm:text-2xl mb-4">
+                  {banner.title2}
+                </h2>
+                <div className="flex items-center text-sm sm:text-lg mb-4">
+                  {[...Array(Math.floor(banner.rating))].map((_, i) => (
+                    <IoIosStar key={i} className="text-primary" />
+                  ))}
+                  {banner.rating % 1 !== 0 && (
+                    <FaStarHalfStroke className="text-secondary" />
+                  )}
+                </div>
+                <button className="bg-gradient-to-r from-primary to-secondary text-white font-navfont  px-6 py-3 rounded-lg text-sm sm:text-base font-normal transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-primary">
+  {banner.buttonText}
+</button>
+              </div>
             </div>
           </SwiperSlide>
         ))}
       </Swiper>
 
       {/* Custom Navigation Buttons */}
-      <div className="custom-prev absolute left-4 top-1/2 transform -translate-y-1/2 z-10 bg-primary text-secondary rounded-full cursor-pointer">
+      <div className="custom-prev absolute left-2 top-1/2 transform -translate-y-1/2 z-10 bg-primary text-secondary rounded-full cursor-pointer">
         <IoMdArrowDropleftCircle className="font-bold" size={24} />
       </div>
-      <div className="custom-next absolute right-4 top-1/2 transform -translate-y-1/2 z-10 bg-primary text-secondary rounded-full cursor-pointer">
+      <div className="custom-next absolute right-2 top-1/2 transform -translate-y-1/2 z-10 bg-primary text-secondary rounded-full cursor-pointer">
         <IoMdArrowDropleftCircle className="font-bold rotate-180" size={24} />
       </div>
     </div>

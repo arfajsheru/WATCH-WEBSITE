@@ -15,6 +15,8 @@ export default {
       fontFamily: {
         navfont: '"Kanit", serif',
         font2: '"Kanit", serif',
+        font3:'"Bodoni Moda", serif',
+        font4:'"Lora", serif'
       }
     },
   },

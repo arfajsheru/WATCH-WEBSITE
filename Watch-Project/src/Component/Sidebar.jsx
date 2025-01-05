@@ -1,14 +1,21 @@
 import React, { useState } from "react";
-import { RiMenu2Line } from "react-icons/ri";
-import { RiAdminFill } from "react-icons/ri";
-import { NavLink } from "react-router-dom";
+import { RiMenu2Line, RiAdminFill } from "react-icons/ri";
+import { NavLink, useNavigate } from "react-router-dom";
 import { IoIosArrowForward } from "react-icons/io";
 import { collectionTypes } from "../data/collectiondata";
+
 const Sidebar = ({ toggleSidebar, isOpen }) => {
   const [activeTab, setActiveTab] = useState("menu");
   const [collopen, setCollOpen] = useState(false);
   const [aboutopen, setAboutOpen] = useState(false);
   const [categoryOpen, setCategoryOpen] = useState({});
+  const navigate = useNavigate();
+
+  // Common function for navigation and closing the sidebar
+  const handleNavClick = (path) => {
+    toggleSidebar(); // Close Sidebar
+    navigate(path);  // Navigate to the path
+  };
 
   const toggleCategory = (category) => {
     setCategoryOpen((prevState) => ({
@@ -16,6 +23,7 @@ const Sidebar = ({ toggleSidebar, isOpen }) => {
       [category]: !prevState[category], // Toggle the specific category
     }));
   };
+
   return (
     <>
       <div
@@ -23,7 +31,7 @@ const Sidebar = ({ toggleSidebar, isOpen }) => {
           isOpen ? "translate-x-0" : "-translate-x-full"
         } transition-transform duration-300 ease-in-out z-50`}
       >
-        {/* Menu or login */}
+        {/* Menu or Login */}
         <div className="flex items-center justify-between w-full border-b border-black font-navfont">
           <div
             className={`h-10 w-[50%] flex items-center justify-center gap-2 text-xl cursor-pointer ${
@@ -49,25 +57,33 @@ const Sidebar = ({ toggleSidebar, isOpen }) => {
           </div>
         </div>
 
-        {/* Navigation link */}
+        {/* Navigation Links */}
         <div className="flex flex-col gap-4 p-4 text-xl font-navfont text-gray-800">
-          <NavLink className="">Home</NavLink>
+          <div
+            onClick={() => handleNavClick("/")}
+            className="cursor-pointer"
+          >
+            Home
+          </div>
 
           {/* Collections */}
           <div>
-            <NavLink className="flex items-center justify-between">
+            <div
+              className="flex items-center justify-between cursor-pointer"
+            >
               <div className="w-full flex items-center justify-between">
-                Collection
+                <span onClick={() => handleNavClick("/collections")}>Collection</span>
+                
                 <span className={` ${collopen && "rotate-90"}`}>
                   <IoIosArrowForward onClick={() => setCollOpen(!collopen)} />
                 </span>
               </div>
-            </NavLink>
+            </div>
+
             <div className={`${collopen ? "block" : "hidden"}`}>
               {collectionTypes &&
                 Object.entries(collectionTypes).map(([category, items]) => (
                   <div key={category}>
-                    {/* Har category ko ek unique key dena */}
                     <div className="">
                       <h3
                         className="flex items-center justify-between font-medium mt-4 pl-2 mb-2 hover:text-primary duration-500 cursor-pointer bg-secondary border border-black rounded-sm shadow-md hover:shadow-lg"
@@ -75,13 +91,14 @@ const Sidebar = ({ toggleSidebar, isOpen }) => {
                       >
                         {category}
                         <span
-                          className={`${categoryOpen[category] && "rotate-90"}`}
+                          className={`${
+                            categoryOpen[category] && "rotate-90"
+                          }`}
                         >
                           <IoIosArrowForward />
                         </span>
                       </h3>
                     </div>
-                    {/* Category ka naam */}
                     <ul
                       className={`${
                         categoryOpen[category]
@@ -89,11 +106,11 @@ const Sidebar = ({ toggleSidebar, isOpen }) => {
                           : "hidden"
                       }`}
                     >
-                      {/* Items ko list ke form mein display karo */}
                       {items.map((item, index) => (
                         <li
-                          className="cursor-pointer  ml-3 font-light text-gray-600 hover:text-gray-800 hover:scale-x-105 duration-500 ease-in-out "
                           key={index}
+                          className="cursor-pointer  ml-3 font-light text-gray-600 hover:text-gray-800 hover:scale-x-105 duration-500 ease-in-out "
+                          onClick={() => handleNavClick(`/collection/${item}`)}
                         >
                           {item}
                         </li>
@@ -104,20 +121,46 @@ const Sidebar = ({ toggleSidebar, isOpen }) => {
             </div>
           </div>
 
-          <NavLink className="">GiftCards</NavLink>
-          <NavLink className="">Wholesale</NavLink>
+          <div
+            onClick={() => handleNavClick("/giftcards")}
+            className="cursor-pointer"
+          >
+            GiftCards
+          </div>
+
+          <div
+            onClick={() => handleNavClick("/wholesale")}
+            className="cursor-pointer"
+          >
+            Wholesale
+          </div>
 
           {/* About us */}
-          <div>
-            <NavLink className="flex items-center justify-between">AboutUs
-            <span className={` ${collopen && "rotate-90"}`}>
-                  <IoIosArrowForward onClick={() => setAboutOpen(!aboutopen)} />
-                </span>
-            </NavLink>
-            <div className={`flex-col gap-2 mt-4 cursor-pointer font-light text-gray-600 ${aboutopen ? "flex": "hidden"}`}>
-                <div>Meet The Artist</div>
-                <div>FAQs</div>
-                <div>Contact Us</div>
+          <div>+
+            <div
+              className="flex items-center justify-between cursor-pointer"
+              onClick={() => handleNavClick("/aboutus")}
+            >
+              AboutUs
+              <span
+                className={` ${aboutopen && "rotate-90"}`}
+                onClick={() => setAboutOpen(!aboutopen)}
+              >
+                <IoIosArrowForward />
+              </span>
+            </div>
+            <div
+              className={`flex-col gap-2 mt-4 cursor-pointer font-light text-gray-600 ${
+                aboutopen ? "flex" : "hidden"
+              }`}
+            >
+              <div onClick={() => handleNavClick("/aboutus/artist")}>
+                Meet The Artist
+              </div>
+              <div onClick={() => handleNavClick("/aboutus/faqs")}>FAQs</div>
+              <div onClick={() => handleNavClick("/aboutus/contact")}>
+                Contact Us
+              </div>
             </div>
           </div>
         </div>

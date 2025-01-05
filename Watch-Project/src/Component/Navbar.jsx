@@ -77,14 +77,14 @@ const Navbar = () => {
               <RiAdminFill className="duration-1000 cursor-pointer text-xl md:text-2xl" />
             </span>
           </div>
-          <div className="relative h-5 w-5 p-5 md:h-6 md:w-6 md:p-5 flex items-center justify-center hover:bg-secondary duration-500 ease-out shadow-md rounded-full bg-white">
+          <NavLink to={"/cart"} className="relative h-5 w-5 p-5 md:h-6 md:w-6 md:p-5 flex items-center justify-center hover:bg-secondary duration-500 ease-out shadow-md rounded-full bg-white">
             <span>
               <FaCartArrowDown className="duration-1000 cursor-pointer text-xl md:text-2xl" />
             </span>
             <div className="absolute -top-1 -right-1 bg-red-500 text-white text-xs sm:text-sm rounded-full h-4 w-4 sm:h-5 sm:w-5 flex items-center justify-center">
               9
             </div>
-          </div>
+          </NavLink>
         </div>
       </div>
       {/* Sidebar */}

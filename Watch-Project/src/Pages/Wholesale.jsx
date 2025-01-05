@@ -1,17 +1,17 @@
 import React from 'react'
 
-const AboutUs = () => {
+const Wholesale = () => {
   return (
     <div className="flex items-center justify-center min-h-screen px-3">
       <div className="text-center p-6 bg-white shadow-lg rounded-lg max-w-md">
         {/* Heading */}
-        <h1 className="text-2xl md:text-3xl font-bold text-secondary">
-        🛠️ Hi, I'm Arfaj Sheru! 🚀
+        <h1 className="text-2xl md:text-4xl font-bold text-secondary">
+          🌟 Hi, I'm Arfaj Sheru!
         </h1>
 
         {/* Message */}
         <p className="mt-4 text-gray-700 text-sm md:text-lg leading-relaxed">
-          AboutUs section of the website is currently under development. I'm 
+          Wholesale section of the website is currently under development. I'm 
           working hard to bring you something amazing. Stay tuned for updates!
         </p>
 
@@ -20,11 +20,11 @@ const AboutUs = () => {
 
         {/* Animated Progress Bar */}
         <div className="mt-6">
-          <p className="text-gray-500 text-sm mb-2">Progress: 45%</p>
+          <p className="text-gray-500 text-sm mb-2">Progress: 55%</p>
           <div className="relative w-full bg-gray-300 rounded-full h-2 overflow-hidden">
             <div
               className="absolute left-0 top-0 h-full bg-secondary rounded-full animate-progress"
-              style={{ width: "45%" }}
+              style={{ width: "55%" }}
             ></div>
           </div>
         </div>
@@ -44,4 +44,4 @@ const AboutUs = () => {
   )
 }
 
-export default AboutUs
+export default Wholesale

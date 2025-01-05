@@ -6,10 +6,11 @@ import GiftCards from "./Pages/GiftCards.jsx";
 import Wholesale from "./Wholesale.jsx";
 import AboutUs from "./Pages/AboutUs.jsx";
 import Navbar from "./Component/Navbar.jsx";
+import Footer from "./Component/Footer.jsx";
 const App = () => {
   return (
     <div>
-        <Navbar />
+      <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/collections" element={<Collection />} />
@@ -17,6 +18,7 @@ const App = () => {
         <Route path="/wholesale" element={<Wholesale />} />
         <Route path="/aboutus" element={<AboutUs />} />
       </Routes>
+      <Footer />
     </div>
   );
 };

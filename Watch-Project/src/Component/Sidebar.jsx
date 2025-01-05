@@ -3,6 +3,7 @@ import { RiMenu2Line, RiAdminFill } from "react-icons/ri";
 import { NavLink, useNavigate } from "react-router-dom";
 import { IoIosArrowForward } from "react-icons/io";
 import { collectionTypes } from "../data/collectiondata";
+import { IoCloseCircleSharp } from "react-icons/io5";
 
 const Sidebar = ({ toggleSidebar, isOpen }) => {
   const [activeTab, setActiveTab] = useState("menu");
@@ -136,7 +137,7 @@ const Sidebar = ({ toggleSidebar, isOpen }) => {
           </div>
 
           {/* About us */}
-          <div>+
+          <div>
             <div
               className="flex items-center justify-between cursor-pointer"
               onClick={() => handleNavClick("/aboutus")}
@@ -166,20 +167,21 @@ const Sidebar = ({ toggleSidebar, isOpen }) => {
         </div>
 
         {/* Close button */}
-        <span
-          className="text-gray-800 text-lg cursor-pointer"
-          onClick={toggleSidebar}
-        >
-          Close
-        </span>
+        
       </div>
 
       {/* Overlay */}
       {isOpen && (
+        <div className="fixed inset-0 bg-black bg-opacity-50 z-40" onClick={toggleSidebar}>
+        {/* Close Icon Positioned on Top */}
         <div
-          className="fixed inset-0 bg-black bg-opacity-50 z-40"
+          className="absolute top-0 right-[67px] z-50 text-md text-primary bg-secondary p-[2px] rounded-md shadow-2xl cursor-pointer"
           onClick={toggleSidebar}
-        ></div>
+        >
+          <IoCloseCircleSharp />
+        </div>
+      </div>
+      
       )}
     </>
   );

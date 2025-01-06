@@ -11,7 +11,7 @@ const Cart = () => {
 
         {/* Message */}
         <p className="mt-4 text-gray-700 text-sm md:text-lg leading-relaxed">
-          This section of the website is currently under development. I'm 
+          Cart section of the website is currently under development. I'm 
           working hard to bring you something amazing. Stay tuned for updates!
         </p>
 

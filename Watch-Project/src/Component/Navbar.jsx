@@ -1,11 +1,14 @@
 import React, { useState } from "react";
 import { BiMenu } from "react-icons/bi";
-import { FaCartArrowDown } from "react-icons/fa";
+import { FaCartArrowDown, FaLeaf } from "react-icons/fa";
 import { IoSearch } from "react-icons/io5";
 import { RiAdminFill } from "react-icons/ri";
 import logo from "../assets/logo_watchcraft.webp";
 import Sidebar from "./Sidebar";
+import { IoIosArrowForward } from "react-icons/io";
 import { NavLink } from "react-router-dom";
+import AboutsOption from "../Navigation/AboutsOption";
+import CollectionOption from "../Navigation/CollectionOption";
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -32,6 +35,7 @@ const Navbar = () => {
         <div
           className={`relative hidden lg:flex items-center justify-between gap-6 uppercase font-navfont text-xl text-gray-800`}
         >
+          {/* Home */}
           <NavLink
             to={"/"}
             className="relative group cursor-pointer text-textcolor hover:text-secondary "
@@ -39,10 +43,20 @@ const Navbar = () => {
             Home
             <div className="absolute left-0 bottom-0 w-0 h-[2px] bg-secondary transition-all duration-300 group-hover:w-full"></div>
           </NavLink>
-          <NavLink to={"/collections"} className="relative group cursor-pointer hover:text-secondary ">
-            Collection
+
+          {/*Collections ${
+                    aboutOpen && "rotate-90"
+                  } */}
+          {/* <NavLink
+            to={"/collections"}
+            className="relative group cursor-pointer text-textcolor hover:text-secondary"
+          >
+            collections
             <div className="absolute left-0 bottom-0 w-0 h-[2px] bg-secondary transition-all duration-300 group-hover:w-full"></div>
-          </NavLink>
+          </NavLink> */}
+           <CollectionOption />
+
+          {/* Gift Cards */}
           <NavLink
             to={"/giftcards"}
             className="relative group cursor-pointer text-textcolor hover:text-secondary "
@@ -50,6 +64,8 @@ const Navbar = () => {
             Gift Cards
             <div className="absolute left-0 bottom-0 w-0 h-[2px] bg-secondary transition-all duration-300 group-hover:w-full"></div>
           </NavLink>
+
+          {/* Wholesale */}
           <NavLink
             to={"/wholesale"}
             className="relative group cursor-pointer text-textcolor hover:text-secondary "
@@ -57,13 +73,9 @@ const Navbar = () => {
             Wholesale
             <div className="absolute left-0 bottom-0 w-0 h-[2px] bg-secondary transition-all duration-300 group-hover:w-full"></div>
           </NavLink>
-          <NavLink
-            to={"/aboutus"}
-            className="relative group cursor-pointer text-textcolor hover:text-secondary "
-          >
-            AboutUs
-            <div className="absolute left-0 bottom-0 w-0 h-[2px] bg-secondary transition-all duration-300 group-hover:w-full"></div>
-          </NavLink>
+
+          {/*About us*/}
+          <AboutsOption />
         </div>
 
         <div className="flex items-center justify-between gap-4 sm:gap-6 md:gap-8">
@@ -77,7 +89,10 @@ const Navbar = () => {
               <RiAdminFill className="duration-1000 cursor-pointer text-xl md:text-2xl" />
             </span>
           </div>
-          <NavLink to={"/cart"} className="relative h-5 w-5 p-5 md:h-6 md:w-6 md:p-5 flex items-center justify-center hover:bg-secondary duration-500 ease-out shadow-md rounded-full bg-white">
+          <NavLink
+            to={"/cart"}
+            className="relative h-5 w-5 p-5 md:h-6 md:w-6 md:p-5 flex items-center justify-center hover:bg-secondary duration-500 ease-out shadow-md rounded-full bg-white"
+          >
             <span>
               <FaCartArrowDown className="duration-1000 cursor-pointer text-xl md:text-2xl" />
             </span>

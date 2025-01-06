@@ -71,7 +71,7 @@ const Feedback = ({toggleFeedbackOpen,feedbackOpen}) => {
         <input
           type="file"
           accept="image/*, video/*"
-          className="w-full p-3 mt-2 border border-secondary focus:ring-2 focus:ring-secondary focus:outline-none"
+          className="p-3 mt-2 border border-secondary focus:ring-2 focus:ring-secondary focus:outline-none"
         />
       </div>
 

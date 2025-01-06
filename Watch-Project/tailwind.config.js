@@ -16,7 +16,8 @@ export default {
         navfont: '"Kanit", serif',
         font2: '"Kanit", serif',
         font3:'"Bodoni Moda", serif',
-        font4:'"Lora", serif'
+        font4:'"Lora", serif',
+        font5:'"Playwrite AU SA", serif'
       }
     },
   },

@@ -45,8 +45,7 @@ const AboutUs = () => {
     //   </div>
     // </div>
     <div className="mb-10">
-      <div className="relative mt-3 sm:mt-4 md:mt-6 mb-4 space-y-24">
-        <div className="flex flex-col items-center justify-center space-y-1">
+          <div className="flex flex-col items-center justify-center space-y-1 mt-3">
           {/* Title */}
           <h1 className="text-black font-bold uppercase text-center text-xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl tracking-widest text-shadow-lg font-font4">
             About-us
@@ -55,6 +54,8 @@ const AboutUs = () => {
           {/* Underline */}
           <span className="block w-12 h-[2px] sm:w-16 md:w-20 lg:w-24 xl:w-32 bg-secondary"></span>
         </div>
+      <div className="relative mt-3 sm:mt-4 md:mt-6 mb-4 space-y-24 mx-4">
+    
 
 
         <div className="flex flex-col md:flex-row mx-2 sm:mx-5 md:mx-11 gap-5 sm:gap-7 md:gap-8 items-center">

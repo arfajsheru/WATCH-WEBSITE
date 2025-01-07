@@ -1,0 +1,1 @@
+print("abc DEF".capitalize())

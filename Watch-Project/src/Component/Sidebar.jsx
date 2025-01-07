@@ -5,7 +5,7 @@ import { IoIosArrowForward } from "react-icons/io";
 import { collectionTypes } from "../data/collectiondata";
 import { IoCloseCircleSharp } from "react-icons/io5";
 
-const Sidebar = ({ toggleSidebar, isOpen }) => {
+const Sidebar = ({ toggleSidebar, isOpen, toggleLogin}) => {
   const [activeTab, setActiveTab] = useState("menu");
   const [collopen, setCollOpen] = useState(false);
   const [aboutopen, setAboutOpen] = useState(false);
@@ -51,7 +51,11 @@ const Sidebar = ({ toggleSidebar, isOpen }) => {
                 ? "bg-secondary text-white"
                 : "bg-white text-black"
             }`}
-            onClick={() => setActiveTab("login")}
+            onClick={() => {
+              setActiveTab("login")
+              toggleLogin();
+            }}
+            
           >
             <RiAdminFill />
             <span>Login</span>
@@ -174,12 +178,12 @@ const Sidebar = ({ toggleSidebar, isOpen }) => {
       {isOpen && (
         <div className="fixed inset-0 bg-black bg-opacity-50 z-40" onClick={toggleSidebar}>
         {/* Close Icon Positioned on Top */}
-        <div
+        {/* <div
           className="absolute top-0 right-[67px] z-50 text-md text-primary bg-secondary p-[2px] rounded-md shadow-2xl cursor-pointer"
           onClick={toggleSidebar}
         >
           <IoCloseCircleSharp />
-        </div>
+        </div> */}
       </div>
       
       )}

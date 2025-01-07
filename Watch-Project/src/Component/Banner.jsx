@@ -16,64 +16,56 @@ import { IoIosStar, IoMdArrowDropleftCircle } from "react-icons/io";
 
 const Banner = () => {
   return (
-    <div className="relative shadow-md md:shadow-xl mb-6 md:mb-8">
-      <Swiper
-      spaceBetween={30}
-      effect={"fade"}
-      navigation={{
-        prevEl: ".custom-prev",
-        nextEl: ".custom-next",
-      }}
-      modules={[EffectFade, Navigation, Pagination]}
-      autoplay={{
-        delay: 3000, // Adjusted delay to 3000ms (3 seconds)
-        disableOnInteraction: false, // Ensures autoplay doesn't stop on interaction
-      }}
-      loop={true} // Infinite loop slider
-      speed={1000} // Set speed to a reasonable value for smooth transitions
-      className="mySwiper"
-    
-      >
-        {bannerList.map((banner) => (
-          <SwiperSlide key={banner._id}>
-            <div className="relative w-full h-[30vh] md:h-[80vh] lg:h-[85vh]">
-              <img
-                src={banner.imgUrl}
-                alt="banner"
-                className="object-cover brightness-50 w-full h-full md:h-[88vh] lg:h-[90vh]"
-              />
-              <div className="absolute inset-0 bg-black bg-opacity-10 flex flex-col justify-center text-center items-center p-10 sm:p-60">
-                <h1 className="text-white text-lg font-font3 sm:text-4xl font-bold mb-2">
-                  {banner.title1}
-                </h1>
-                <h2 className="text-white text-sm font-font4 sm:text-2xl mb-4">
-                  {banner.title2}
-                </h2>
-                <div className="flex items-center text-sm sm:text-lg mb-4">
-                  {[...Array(Math.floor(banner.rating))].map((_, i) => (
-                    <IoIosStar key={i} className="text-primary" />
-                  ))}
-                  {banner.rating % 1 !== 0 && (
-                    <FaStarHalfStroke className="text-secondary" />
-                  )}
-                </div>
-                <button className="bg-gradient-to-r from-primary to-secondary text-white font-navfont  px-6 py-3 rounded-lg text-sm sm:text-base font-normal transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-primary">
-                  {banner.buttonText}
-                </button>
-              </div>
-            </div>
-          </SwiperSlide>
-        ))}
-      </Swiper>
+<div className="relative shadow-md md:shadow-xl mb-6 md:mb-8 m-4 rounded-lg overflow-hidden flex">
+  <Swiper
+    spaceBetween={30}
+    effect={"fade"}
+    navigation={{
+      prevEl: ".custom-prev",
+      nextEl: ".custom-next",
+    }}
+    modules={[EffectFade, Navigation, Pagination]}
+    autoplay={{
+      delay: 3000, // Adjusted delay to 3000ms (3 seconds)
+      disableOnInteraction: false, // Ensures autoplay doesn't stop on interaction
+    }}
+    loop={true} // Infinite loop slider
+    speed={1000} // Set speed to a reasonable value for smooth transitions
+    className="mySwiper"
+  >
+    {bannerList.map((banner) => (
+      <SwiperSlide key={banner._id}>
+        <div className="relative w-full h-[30vh] md:h-[80vh] lg:h-[85vh] rounded-lg overflow-hidden">
+          <img
+            src={banner.imgUrl}
+            alt="banner"
+            className="object-cover brightness-20 w-full h-full md:h-[88vh] lg:h-[90vh] rounded-lg"
+          />
 
-      {/* Custom Navigation Buttons */}
-      <div className="custom-prev absolute left-2 top-1/2 transform -translate-y-1/2 z-10 bg-primary text-secondary rounded-full cursor-pointer">
-        <IoMdArrowDropleftCircle className="font-bold" size={24} />
-      </div>
-      <div className="custom-next absolute right-2 top-1/2 transform -translate-y-1/2 z-10 bg-primary text-secondary rounded-full cursor-pointer">
-        <IoMdArrowDropleftCircle className="font-bold rotate-180" size={24} />
-      </div>
-    </div>
+          {/* Right-aligned content on all screen sizes */}
+          <div className="absolute inset-0 flex flex-col md:gap-9 justify-center text-center px-10 ">
+            <h1 className="text-white text-md sm:text-2xl lg:text-7xl font-font6 mb-2">
+              {banner.title1}
+            </h1>
+            <h2 className="text-white text-sm sm:text-xl lg:text-5xl font-font5 mb-4">
+              {banner.title2}
+            </h2>
+          </div>
+        </div>
+      </SwiperSlide>
+    ))}
+  </Swiper>
+
+  {/* Custom Navigation Buttons */}
+  <div className="custom-prev absolute left-2 top-1/2 transform -translate-y-1/2 z-10 bg-primary text-secondary rounded-full cursor-pointer">
+    <IoMdArrowDropleftCircle className="font-bold" size={24} />
+  </div>
+  <div className="custom-next absolute right-2 top-1/2 transform -translate-y-1/2 z-10 bg-primary text-secondary rounded-full cursor-pointer">
+    <IoMdArrowDropleftCircle className="font-bold rotate-180" size={24} />
+  </div>
+
+
+</div>
   );
 };
 

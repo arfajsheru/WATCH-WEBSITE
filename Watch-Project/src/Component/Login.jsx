@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import logo from "../assets/logo_watchcraft.webp"; // Add your logo file here.
+import { IoClose } from "react-icons/io5";
 
 const Login = ({ toggleLogin }) => {
   const [isRegister, setIsRegister] = useState(false);
@@ -15,10 +16,14 @@ const Login = ({ toggleLogin }) => {
     >
       <div
         onClick={(e) => e.stopPropagation()} // Prevents the event from bubbling up
-        className="bg-white w-[90%] md:w-[40%] lg:w-[30%] p-6 rounded-sm shadow-lg flex flex-col items-center animate-open transition-transform duration-500 ease-in-out"
+        className="relative bg-white w-[90%] md:w-[40%] lg:w-[30%] p-6 rounded-sm shadow-lg flex flex-col items-center animate-open transition-transform duration-500 ease-in-out"
       >
+        <div onClick={toggleLogin} className="absolute right-2 top-2 bg-secondary p-1 rounded-full box-shadow cursor-pointer">
+          <IoClose className="transform transition-transform duration-300 ease-in-out hover:rotate-90" />
+        </div>
+
         {/* Logo */}
-        <img src={logo} alt="Logo" className="h-16 mb-3" />
+        <img src={logo} alt="Logo" className="h-16 mt-2 mb-3" />
 
         {/* Message */}
         {!isRegister && (
@@ -53,7 +58,9 @@ const Login = ({ toggleLogin }) => {
 
           {/* Password Field */}
           <div className="space-y-1">
-            <label className="text-sm font-bold font-font3">Your Password</label>
+            <label className="text-sm font-bold font-font3">
+              Your Password
+            </label>
             <input
               type="password"
               className="w-full p-2 border border-secondary focus:ring-1 focus:ring-secondary focus:outline-none"

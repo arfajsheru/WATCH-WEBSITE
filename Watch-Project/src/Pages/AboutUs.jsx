@@ -5,7 +5,7 @@ import aboutus2 from "../assets/aboutus4.webp";
 import aboutus3 from "../assets/aboutus5.webp";
 const AboutUs = () => {
   return (
-    <div className="mb-10">
+    <div className="mb-10 animate-open">
           <div className="flex flex-col items-center justify-center space-y-1 mt-3">
           {/* Title */}
           <h1 className="text-black font-bold uppercase text-center text-xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl tracking-widest text-shadow-lg font-font4">

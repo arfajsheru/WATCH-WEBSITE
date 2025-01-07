@@ -5,7 +5,7 @@ import ShopAndSave from "../Component/ShopAndSave";
 import GiftDescription from "../Component/GiftDescription";
 const Home = () => {
   return (
-    <div>
+    <div className="animate-open">
       <Banner />
       <BestSellers />
       <ShopAndSave />

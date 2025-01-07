@@ -2,7 +2,7 @@ import React from 'react'
 
 const Wholesale = () => {
   return (
-    <div className="flex items-center justify-center min-h-screen px-3">
+    <div className="flex items-center justify-center min-h-screen px-3 animate-open">
       <div className="text-center p-6 bg-white shadow-lg rounded-lg max-w-md">
         {/* Heading */}
         <h1 className="text-2xl md:text-4xl font-bold text-secondary">

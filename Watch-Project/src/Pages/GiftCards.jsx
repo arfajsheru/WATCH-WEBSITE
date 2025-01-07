@@ -15,7 +15,7 @@ import GiftDescription from "../Component/GiftDescription";
 const GiftCards = () => {
   return (
     <>
-      <div className="p-10 flex flex-col gap-8 md:mx-44">
+      <div className="p-10 flex flex-col gap-8 md:mx-44 animate-open">
         {/* img colume */}
         <div className="flex flex-wrap md:flex-row flex-col items-center justify-center gap-4 ">
           <img

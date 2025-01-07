@@ -7,10 +7,9 @@ export default {
   theme: {
     extend: {
       colors: {
-        // Yaha custom color define karein
-        primary: '#d6e6ff', // Example: Dark blue shade
-        secondary: '#c54628', // Example: Purple shade
-        textcolor: '#2d2926', // Example: Amber shade
+        primary: '#d6e6ff',
+        secondary: '#c54628',
+        textcolor: '#2d2926',
       },
       fontFamily: {
         navfont: '"Kanit", serif',
@@ -19,8 +18,12 @@ export default {
         font4: '"Lora", serif',
         font5: '"Playwrite AU SA", serif',
       },
+      zIndex: {
+        'modal': '50', // Custom z-index for modal
+        'navbar-hover': '60', // Custom z-index for navigation hover
+      },
       animation: {
-        "open": "openModal 0.5s ease-out forwards", // Adding open animation
+        "open": "openModal 0.5s ease-out forwards",
       },
       keyframes: {
         openModal: {
@@ -31,4 +34,4 @@ export default {
     },
   },
   plugins: [],
-}
+};

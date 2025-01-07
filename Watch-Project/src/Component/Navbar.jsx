@@ -9,9 +9,11 @@ import { NavLink } from "react-router-dom";
 import AboutsOption from "../Navigation/AboutsOption";
 import CollectionOption from "../Navigation/CollectionOption";
 import Login from "./Login";
+import SearchModal from "./SearchModel";
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const[showLogin, setShowLogin] = useState(false);
+  const [searchIsOpen, setSearchIsOpen] = useState(false);
+  const [showLogin, setShowLogin] = useState(false);
 
   const toggleSidebar = () => {
     setIsOpen(!isOpen);
@@ -19,7 +21,11 @@ const Navbar = () => {
 
   const toggleLogin = () => {
     setShowLogin(!showLogin);
-  }
+  };
+
+  const toggleSearchModal = () => {
+    setSearchIsOpen((prev) => !prev);
+  };
 
   return (
     <>
@@ -49,7 +55,8 @@ const Navbar = () => {
             <div className="absolute left-0 bottom-0 w-0 h-[2px] bg-secondary transition-all duration-300 group-hover:w-full"></div>
           </NavLink>
 
-           <CollectionOption />
+          {/* Collectionsitems  */}
+          <CollectionOption />
 
           {/* Gift Cards */}
           <NavLink
@@ -74,12 +81,15 @@ const Navbar = () => {
         </div>
 
         <div className="flex items-center justify-between gap-4 sm:gap-6 md:gap-8">
-          <div className="h-5 w-5 p-5 md:h-6 md:w-6 md:p-5 flex items-center justify-center hover:bg-secondary duration-500 ease-out shadow-md rounded-full bg-white">
+        <div onClick={toggleSearchModal} className="h-5 w-5 p-5 md:h-6 md:w-6 md:p-5 flex items-center justify-center hover:bg-secondary duration-500 ease-out shadow-md rounded-full bg-white">
             <span>
               <IoSearch className="duration-1000 cursor-pointer text-xl md:text-2xl" />
             </span>
           </div>
-          <div onClick={toggleLogin} className="h-5 w-5 p-5 md:h-6 md:w-6 md:p-5 items-center justify-center hover:bg-secondary duration-500 ease-out shadow-md rounded-full bg-white hidden md:flex">
+          <div
+            onClick={toggleLogin}
+            className="h-5 w-5 p-5 md:h-6 md:w-6 md:p-5 items-center justify-center hover:bg-secondary duration-500 ease-out shadow-md rounded-full bg-white hidden md:flex"
+          >
             <span>
               <RiAdminFill className="duration-1000 cursor-pointer text-xl md:text-2xl" />
             </span>
@@ -99,9 +109,12 @@ const Navbar = () => {
         </div>
       </div>
 
-
       {/* Sidebar */}
-      <Sidebar toggleSidebar={toggleSidebar} isOpen={isOpen} toggleLogin={toggleLogin} />
+      <Sidebar
+        toggleSidebar={toggleSidebar}
+        isOpen={isOpen}
+        toggleLogin={toggleLogin}
+      />
 
       {/* Offer line */}
       <div className="h-4 md:h-6 w-full bg-gradient-to-r from-red-500 to-red-700 text-center leading-6 md:leading-9 text-white font-bold uppercase text-xs md:text-xs flex items-center justify-center gap-2">
@@ -113,11 +126,13 @@ const Navbar = () => {
         <span className="text-yellow-200">🔥</span>
       </div>
 
+      {showLogin && <Login toggleLogin={toggleLogin} />}
 
-      {showLogin && (
-            <Login toggleLogin={toggleLogin} />
-      )}
 
+      <SearchModal
+              isOpen={searchIsOpen}
+              toggleModal={toggleSearchModal}
+            />
     </>
   );
 };

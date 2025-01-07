@@ -12,7 +12,7 @@ const Login = ({ toggleLogin }) => {
   return (
     <div
       onClick={toggleLogin}
-      className="fixed top-0 left-0 w-full h-full bg-black bg-opacity-50 flex items-center justify-center z-50"
+      className="fixed top-0 left-0 w-full h-full bg-black bg-opacity-85 flex items-center justify-center z-50"
     >
       <div
         onClick={(e) => e.stopPropagation()} // Prevents the event from bubbling up

@@ -17,6 +17,7 @@ export default {
         font3: '"Bodoni Moda", serif',
         font4: '"Lora", serif',
         font5: '"Playwrite AU SA", serif',
+        font6:'"Playfair Display", serif'
       },
       zIndex: {
         'modal': '50', // Custom z-index for modal

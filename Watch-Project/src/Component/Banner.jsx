@@ -16,56 +16,54 @@ import { IoIosStar, IoMdArrowDropleftCircle } from "react-icons/io";
 
 const Banner = () => {
   return (
-<div className="relative shadow-md md:shadow-xl mb-6 md:mb-8 m-4 rounded-lg overflow-hidden flex">
-  <Swiper
-    spaceBetween={30}
-    effect={"fade"}
-    navigation={{
-      prevEl: ".custom-prev",
-      nextEl: ".custom-next",
-    }}
-    modules={[EffectFade, Navigation, Pagination]}
-    autoplay={{
-      delay: 3000, // Adjusted delay to 3000ms (3 seconds)
-      disableOnInteraction: false, // Ensures autoplay doesn't stop on interaction
-    }}
-    loop={true} // Infinite loop slider
-    speed={1000} // Set speed to a reasonable value for smooth transitions
-    className="mySwiper"
-  >
-    {bannerList.map((banner) => (
-      <SwiperSlide key={banner._id}>
-        <div className="relative w-full h-[30vh] md:h-[80vh] lg:h-[85vh] rounded-lg overflow-hidden">
-          <img
-            src={banner.imgUrl}
-            alt="banner"
-            className="object-cover brightness-20 w-full h-full md:h-[88vh] lg:h-[90vh] rounded-lg"
-          />
+    <div className="relative shadow-md md:shadow-xl mb-6 md:mb-8 m-4 rounded-lg overflow-hidden flex">
+      <Swiper
+        spaceBetween={30}
+        effect={"fade"}
+        navigation={{
+          prevEl: ".custom-prev",
+          nextEl: ".custom-next",
+        }}
+        modules={[EffectFade, Navigation, Pagination]}
+        autoplay={{
+          delay: 3000, // Adjusted delay to 3000ms (3 seconds)
+          disableOnInteraction: false, // Ensures autoplay doesn't stop on interaction
+        }}
+        loop={true} // Infinite loop slider
+        speed={1000} // Set speed to a reasonable value for smooth transitions
+        className="mySwiper"
+      >
+        {bannerList.map((banner) => (
+          <SwiperSlide key={banner._id}>
+            <div className="relative w-full h-[30vh] md:h-[80vh] lg:h-[85vh] rounded-lg overflow-hidden">
+              <img
+                src={banner.imgUrl}
+                alt="banner"
+                className="object-cover brightness-50 w-full h-full md:h-[88vh] lg:h-[90vh] rounded-lg"
+              />
 
-          {/* Right-aligned content on all screen sizes */}
-          <div className="absolute inset-0 flex flex-col md:gap-9 justify-center text-center px-10 ">
-            <h1 className="text-white text-md sm:text-2xl lg:text-7xl font-font6 mb-2">
-              {banner.title1}
-            </h1>
-            <h2 className="text-white text-sm sm:text-xl lg:text-5xl font-font5 mb-4">
-              {banner.title2}
-            </h2>
-          </div>
-        </div>
-      </SwiperSlide>
-    ))}
-  </Swiper>
+              {/* Right-aligned content on all screen sizes */}
+              <div className="absolute inset-0 flex flex-col md:gap-9 justify-center text-center px-10">
+                <h1 className="text-white text-md sm:text-2xl lg:text-7xl font-font5 mb-2 font-bold text-shadow-lg">
+                  {banner.title1}
+                </h1>
+                <h2 className="text-white text-sm sm:text-xl lg:text-5xl font-font4 mb-4 font-bold text-shadow-lg">
+                  {banner.title2}
+                </h2>
+              </div>
+            </div>
+          </SwiperSlide>
+        ))}
+      </Swiper>
 
-  {/* Custom Navigation Buttons */}
-  <div className="custom-prev absolute left-2 top-1/2 transform -translate-y-1/2 z-10 bg-primary text-secondary rounded-full cursor-pointer">
-    <IoMdArrowDropleftCircle className="font-bold" size={24} />
-  </div>
-  <div className="custom-next absolute right-2 top-1/2 transform -translate-y-1/2 z-10 bg-primary text-secondary rounded-full cursor-pointer">
-    <IoMdArrowDropleftCircle className="font-bold rotate-180" size={24} />
-  </div>
-
-
-</div>
+      {/* Custom Navigation Buttons */}
+      <div className="custom-prev absolute left-2 top-1/2 transform -translate-y-1/2 z-10 bg-primary text-secondary rounded-full cursor-pointer">
+        <IoMdArrowDropleftCircle className="font-bold" size={24} />
+      </div>
+      <div className="custom-next absolute right-2 top-1/2 transform -translate-y-1/2 z-10 bg-primary text-secondary rounded-full cursor-pointer">
+        <IoMdArrowDropleftCircle className="font-bold rotate-180" size={24} />
+      </div>
+    </div>
   );
 };
 

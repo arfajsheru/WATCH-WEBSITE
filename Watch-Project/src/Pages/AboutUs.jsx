@@ -3,22 +3,13 @@ import aboutusimg from "../assets/aboutus2.jpeg";
 import aboutus1 from "../assets/aboutus2.webp";
 import aboutus2 from "../assets/aboutus4.webp";
 import aboutus3 from "../assets/aboutus5.webp";
+import Title from "../Component/Title";
 const AboutUs = () => {
   return (
-    <div className="mb-10 animate-open">
-          <div className="flex flex-col items-center justify-center space-y-1 mt-3">
-          {/* Title */}
-          <h1 className="text-black font-bold uppercase text-center text-xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl tracking-widest text-shadow-lg font-font4">
-            About-us
-          </h1>
+    <div className="mb-10 animate-open p-5 sm:p-10">
+      <Title title1={"About "} title2={"Us"} />
 
-          {/* Underline */}
-          <span className="block w-12 h-[2px] sm:w-16 md:w-20 lg:w-24 xl:w-32 bg-secondary"></span>
-        </div>
       <div className="relative mt-3 sm:mt-4 md:mt-6 mb-4 space-y-24 mx-4">
-    
-
-
         <div className="flex flex-col md:flex-row mx-2 sm:mx-5 md:mx-11 gap-5 sm:gap-7 md:gap-8 items-center">
           <div className="w-full md:w-2/4">
             <h1 className="text-lg sm:text-2xl md:text-3xl lg:text-4xl leading-relaxed sm:leading-snug md:leading-normal lg:leading-loose font-font5 text-gray-600">
@@ -46,7 +37,7 @@ const AboutUs = () => {
         </div>
 
         <div className="flex flex-col md:flex-row mx-2 sm:mx-5 md:mx-11 gap-5 sm:gap-7 md:gap-8 items-center">
-        <div className="w-full md:w-2/4 bg-wh">
+          <div className="w-full md:w-2/4 bg-wh">
             <div className="relative overflow-hidden w-full h-full">
               <img
                 src={aboutus2}
@@ -57,24 +48,38 @@ const AboutUs = () => {
           </div>
           <div className="w-full md:w-2/4">
             <h1 className="text-lg sm:text-2xl md:text-3xl lg:text-4xl leading-relaxed sm:leading-snug md:leading-normal lg:leading-loose font-font5 text-gray-600">
-            Milieris is an artist of many disciplines
+              Milieris is an artist of many disciplines
             </h1>
 
             <p className="text-xs sm:text-sm md:text-md lg:text-xl">
-            Milieris is an artist of many disciplines and voices, yet timepieces have been a constant passion over the course of his life. Watchcraft timepieces bring together a range of artistic disciplines, such as welding, sculpture, engraving, and painting. Milieris is an artist who brings a range of mediums into each hand-wrought timepiece. Within each of the thirteen collections there are slight variations of style and design, but each watch is its own piece of art, never mass produced, always authentic.
+              Milieris is an artist of many disciplines and voices, yet
+              timepieces have been a constant passion over the course of his
+              life. Watchcraft timepieces bring together a range of artistic
+              disciplines, such as welding, sculpture, engraving, and painting.
+              Milieris is an artist who brings a range of mediums into each
+              hand-wrought timepiece. Within each of the thirteen collections
+              there are slight variations of style and design, but each watch is
+              its own piece of art, never mass produced, always authentic.
             </p>
           </div>
-          
         </div>
 
         <div className="flex flex-col md:flex-row mx-2 sm:mx-5 md:mx-11 gap-5 sm:gap-7 md:gap-8 items-center">
           <div className="w-full md:w-2/4">
             <h1 className="text-lg sm:text-2xl md:text-3xl lg:text-4xl leading-relaxed sm:leading-snug md:leading-normal lg:leading-loose font-font5 text-gray-600">
-            Giving the artwork a life of its own
+              Giving the artwork a life of its own
             </h1>
 
             <p className="text-xs sm:text-sm md:text-md lg:text-xl">
-            Watchcraft timepieces are constructed from naturally oxidized metals that even after being refined by Milieris’ careful artistic process are intentionally not sealed or coated to protect them from the environment. This artistic design choice of Milieris gives the fourth dimension of “time” a chance to continue the artistic process well after the timepiece has been purchased and worn. This subtle facet of Watchcraft timepieces is a form “legacy creativity.” It gives the artwork a life of its own, beyond creator and wearer.
+              Watchcraft timepieces are constructed from naturally oxidized
+              metals that even after being refined by Milieris’ careful artistic
+              process are intentionally not sealed or coated to protect them
+              from the environment. This artistic design choice of Milieris
+              gives the fourth dimension of “time” a chance to continue the
+              artistic process well after the timepiece has been purchased and
+              worn. This subtle facet of Watchcraft timepieces is a form “legacy
+              creativity.” It gives the artwork a life of its own, beyond
+              creator and wearer.
             </p>
           </div>
           <div className="w-full md:w-2/4 bg-wh">
@@ -87,7 +92,6 @@ const AboutUs = () => {
             </div>
           </div>
         </div>
-
       </div>
     </div>
   );

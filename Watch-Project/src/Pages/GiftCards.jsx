@@ -11,11 +11,14 @@ import { GiDiscGolfBag } from "react-icons/gi";
 import { ImGift } from "react-icons/im";
 import { FaHandshake } from "react-icons/fa";
 import GiftDescription from "../Component/GiftDescription";
+import Title from "../Component/Title";
 
 const GiftCards = () => {
   return (
     <>
-      <div className="p-10 flex flex-col gap-8 md:mx-44 animate-open">
+      <div className="p-5 sm:p-10 flex flex-col gap-8 md:mx-44 animate-open">
+
+        <Title title1={"Gift "} title2={"Cards"} />
         {/* img colume */}
         <div className="flex flex-wrap md:flex-row flex-col items-center justify-center gap-4 ">
           <img

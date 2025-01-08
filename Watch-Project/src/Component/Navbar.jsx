@@ -44,7 +44,7 @@ const Navbar = () => {
         </div>
 
         <div
-          className={`relative hidden lg:flex items-center justify-between gap-6 uppercase font-navfont text-xl text-gray-800`}
+          className={`relative hidden lg:flex items-center justify-between gap-6 uppercase font-font2 text-xl text-gray-800`}
         >
           {/* Home */}
           <NavLink

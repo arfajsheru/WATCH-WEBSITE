@@ -19,17 +19,17 @@ const AboutUs = () => {
         {/* Overlay Content */}
         <div className="absolute inset-0 flex flex-col items-center justify-center gap-4 sm:gap-6 md:gap-8 lg:gap-10">
           {/* Title */}
-          <Title title1={"Exclusive "} title2={"Wholesale"} />
+          <Title title1={"About "} title2={"Us"} />
 
           {/* Breadcrumb */}
           <div className="flex gap-1 items-center text-sm sm:text-base md:text-lg uppercase text-gray-700">
             <Link to={"/"} className="font-medium flex items-center">Home <IoIosArrowForward className="text-lg"/></Link>
-            <Link to={"/wholesale"} className="font-medium">Wholesale</Link>
+            <Link to={"/aboutus"} className="font-medium">AboutUs</Link>
           </div>
 
           {/* Headline */}
           <div className="text-center text-xs sm:text-lg md:text-2xl lg:text-3xl font-bold font-font7 capitalilze text-gray-800">
-            Interested in offering Watchcraft?
+          Shaping Time, One Watch at a Time
           </div>
         </div>
       </div>

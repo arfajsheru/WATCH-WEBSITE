@@ -12,12 +12,11 @@ const BestSellers = () => {
   );
 
   return (
-    <div className="p-8 mx-5 sm:mx-6 md:mx-2">
+    <div className="p-8 mx-1 sm:mx-2">
       <div className="mb-2 md:mb-3">
-      <h1 className="cursor-pointer text-xl md:text-5xl font-medium text-center text-gray-600 tracking-wide uppercase transition-all duration-300 hover:text-secondary">
-  Browse Our BestSellers
-</h1>
-
+        <h1 className="cursor-pointer text-xl md:text-5xl font-medium text-center text-gray-600 tracking-wide uppercase transition-all duration-300 hover:text-secondary">
+          Browse Our BestSellers
+        </h1>
       </div>
 
       <div className="mb-5 flex items-center gap-2 md:gap-3 font-bold font-font2 text-gray-700">
@@ -42,10 +41,10 @@ const BestSellers = () => {
         </span>
       </div>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-5 overflow-hidden">
+      <div className="grid grid-cols-2 sm:grid-cols-3  lg:grid-cols-5 gap-5 overflow-hidden">
         {/* Render filtered items based on selected category */}
         {filteredItems.slice(0, 5).map((item) => (
-        <Item item={item}/>
+          <Item key={item.id} item={item} />
         ))}
       </div>
     </div>

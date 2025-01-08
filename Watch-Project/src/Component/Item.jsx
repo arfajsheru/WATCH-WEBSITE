@@ -22,13 +22,13 @@ const Item = ({ item }) => {
         />
         {/* Icons on hover */}
         <div className="absolute left-2 top-2 flex flex-col gap-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-          <button className="p-1 sm:p-2 bg-secondary rounded-full shadow-lg text-primary hover:bg-primary hover:text-secondary transition-transform duration-500 -translate-x-5 group-hover:translate-x-0">
+          <button className="p-1 sm:p-2 bg-secondary rounded-full shadow-md shadow-black text-primary hover:bg-primary hover:text-secondary transition-transform duration-500 -translate-x-5 group-hover:translate-x-0">
             <IoHeart className="text-md sm:text-xl" />
           </button>
-          <button className="p-1 sm:p-2 bg-secondary rounded-full shadow-lg text-primary hover:bg-primary hover:text-secondary transition-transform duration-500 -translate-x-5 group-hover:translate-x-0">
+          <button className="p-1 sm:p-2 bg-secondary rounded-full shadow-md shadow-black text-primary hover:bg-primary hover:text-secondary transition-transform duration-500 -translate-x-5 group-hover:translate-x-0">
             <IoCart className="text-md sm:text-xl" />
           </button>
-          <button className="p-1 sm:p-2 bg-secondary rounded-full shadow-lg text-primary hover:bg-primary hover:text-secondary transition-transform duration-500 -translate-x-5 group-hover:translate-x-0">
+          <button className="p-1 sm:p-2 bg-secondary rounded-full shadow-md shadow-black text-primary hover:bg-primary hover:text-secondary transition-transform duration-500 -translate-x-5 group-hover:translate-x-0">
             <IoEye className="text-md sm:text-xl" />
           </button>
         </div>
@@ -40,7 +40,7 @@ const Item = ({ item }) => {
       </div>
 
       {/* Item details overflow-hidden text-ellipsis */}
-      <div className="p-1 sm:p-2">
+      <div className="p-1 sm:p-2 w-full">
         <h2 className="text-[12px] font-font2 text-gray-700 capitalize hover:text-black transition-colors duration-300 md:truncate md:overflow-hidden md:text-ellipsis">
           {item.title}
         </h2>

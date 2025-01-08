@@ -28,9 +28,9 @@ const BestSellers = () => {
         </span>
         <span
           className="cursor-pointer hover:text-secondary relative after:content-[''] after:absolute after:w-0 after:h-[3px] border-b border-black after:bg-secondary after:left-0 after:bottom-[-2px] after:transition-all after:duration-300 hover:after:w-full"
-          onClick={() => setSelectedCategory("Bracelets")}
+          onClick={() => setSelectedCategory("brand")}
         >
-          Bracelets
+          Brand
         </span>
         <span
           className="cursor-pointer hover:text-secondary relative after:content-[''] after:absolute after:w-0 after:h-[3px] border-b border-black after:bg-secondary after:left-0 after:bottom-[-2px] after:transition-all after:duration-300 hover:after:w-full"

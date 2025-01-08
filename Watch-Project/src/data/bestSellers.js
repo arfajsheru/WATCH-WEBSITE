@@ -12,6 +12,20 @@ import watch5_5 from "../assets/watch5_5.webp"
 import watch6_6 from "../assets/watch6_6.webp"
 
 
+import brand1 from "../assets/brand1.webp"
+import brand2 from "../assets/brand2.webp"
+import brand3 from "../assets/brand3.webp"
+import brand4 from "../assets/brand4.webp"
+import brand5 from "../assets/brand5.webp"
+import brand6 from "../assets/brand6.webp"
+import brand1_1 from "../assets/brand1_1.webp"
+import brand2_2 from "../assets/brand2_2.webp"
+import brand3_3 from "../assets/brand3_3.webp"
+import brand4_4 from "../assets/brand4_4.webp"
+import brand5_5 from "../assets/brand5_5.webp"
+import brand6_6 from "../assets/brand6_6.webp"
+
+
 export const bestSellers = [
   // timex
   {
@@ -75,88 +89,66 @@ export const bestSellers = [
     images: [watch6, watch6_6],
   },
 
-  // // Bracelets
-  // {
-  //   id: 6,
-  //   category: "Bracelets",
-  //   title: "Leather Bracelet",
-  //   description: "Stylish leather design for every occasion.",
-  //   price: "$59.99",
-  //   image: bracelet1, // Replace with your image URLs
-  // },
-  // {
-  //   id: 7,
-  //   category: "Bracelets",
-  //   title: "Charm Bracelet",
-  //   description: "Personalized charms for a unique look.",
-  //   price: "$69.99",
-  //   image: bracelet2,
-  // },
-  // {
-  //   id: 8,
-  //   category: "Bracelets",
-  //   title: "Gold Bracelet",
-  //   description: "Elegant and timeless gold bracelet.",
-  //   price: "$199.99",
-  //   image: bracelet3,
-  // },
-  // {
-  //   id: 9,
-  //   category: "Bracelets",
-  //   title: "Silver Bracelet",
-  //   description: "Simple and classic silver design.",
-  //   price: "$89.99",
-  //   image: bracelet4,
-  // },
-  // {
-  //   id: 10,
-  //   category: "Bracelets",
-  //   title: "Beaded Bracelet",
-  //   description: "Colorful beads for a casual style.",
-  //   price: "$39.99",
-  //   image: bracelet5,
-  // },
 
-  // // Watches
-  // {
-  //   id: 11,
-  //   category: "Watches",
-  //   title: "Luxury Watch",
-  //   description: "Crafted with precision and elegance.",
-  //   price: "$249.99",
-  //   image: watchs6, // Replace with your image URLs
-  // },
-  // {
-  //   id: 12,
-  //   category: "Watches",
-  //   title: "Sport Watch",
-  //   description: "Durable and perfect for workouts.",
-  //   price: "$149.99",
-  //   image: watchs7,
-  // },
-  // {
-  //   id: 13,
-  //   category: "Watches",
-  //   title: "Digital Watch",
-  //   description: "Modern and feature-packed.",
-  //   price: "$99.99",
-  //   image: watchs8,
-  // },
-  // {
-  //   id: 14,
-  //   category: "Watches",
-  //   title: "Classic Watch",
-  //   description: "Timeless design for all occasions.",
-  //   price: "$199.99",
-  //   image: watchs9,
-  // },
-  // {
-  //   id: 15,
-  //   category: "Watches",
-  //   title: "Smartwatch",
-  //   description: "Connected and intelligent features.",
-  //   price: "$299.99",
-  //   image: watchs10,
-  // },
+  {
+    id: 7,
+    category: "brand",
+    title: "Guess Legend Men Black Dial Quartz Watch",
+    price: 17995,
+    original_price: 20999,
+    offer: 20,
+    bestSellers: true,
+    images: [brand1, brand1_1], // Array with two images
+  },
+  {
+    id: 8,
+    category: "brand",
+    title: "Guess Idol Champagne Dial Round Case Analog Men Watch",
+    price: 8397,
+    original_price: 11995,
+    offer: 30,
+    bestSellers: true,
+    images: [brand2, brand2_2],
+  },
+  {
+    id: 9,
+    category: "brand",
+    title: "Guess Blue Dial Round Case Quartz Analog Men Watch",
+    price: 12796,
+    original_price: 15995,
+    offer: 20,
+    bestSellers: true,
+    images: [brand3, brand3_3],
+  },
+  {
+    id: 10,
+    category: "brand",
+    title: "Guess Prodigy Black Dial Rectangle Case Multi Function Men Watch",
+    price: 12247,
+    original_price: 17495,
+    offer: 30,
+    bestSellers: true,
+    images: [brand4, brand4_4],
+  },
+  {
+    id: 11,
+    category: "brand",
+    title: "Guess Blue Dial Round Case Quartz Analog Men Watch",
+    price: 13297,
+    original_price: 18995,
+    offer: 30,
+    bestSellers: true,
+    images: [brand5, brand5_5],
+  },
+  {
+    id: 12,
+    category: "brand",
+    title: "Guess Asset Black Dial Round Case Analog Men Watch",
+    price: 12796,
+    original_price: 15996,
+    offer: 20,
+    bestSellers: true,
+    images: [brand6, brand6_6],
+  },
 ];
 

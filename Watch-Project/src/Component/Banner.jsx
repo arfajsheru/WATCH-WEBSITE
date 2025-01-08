@@ -9,14 +9,14 @@ import "swiper/css/effect-fade";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 // import required modules
-import { EffectFade, Navigation, Pagination } from "swiper/modules";
+import { Autoplay, EffectFade, Navigation, Pagination,} from "swiper/modules";
 // Import React Icons
 import { FaStarHalfStroke } from "react-icons/fa6";
 import { IoIosStar, IoMdArrowDropleftCircle } from "react-icons/io";
 
 const Banner = () => {
   return (
-    <div className="relative shadow-md md:shadow-xl mb-6 md:mb-8 m-4 rounded-lg overflow-hidden flex">
+    <div className="relative shadow-md md:shadow-xl mb-6 md:mb-8 m-4 rounded-lg overflow-hidden flex cursor-pointer">
       <Swiper
         spaceBetween={30}
         effect={"fade"}
@@ -24,7 +24,7 @@ const Banner = () => {
           prevEl: ".custom-prev",
           nextEl: ".custom-next",
         }}
-        modules={[EffectFade, Navigation, Pagination]}
+        modules={[EffectFade, Navigation, Pagination, Autoplay]}
         autoplay={{
           delay: 3000, // Adjusted delay to 3000ms (3 seconds)
           disableOnInteraction: false, // Ensures autoplay doesn't stop on interaction

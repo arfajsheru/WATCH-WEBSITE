@@ -86,43 +86,44 @@ const Sidebar = ({ toggleSidebar, isOpen, toggleLogin}) => {
             </div>
 
             <div className={`${collopen ? "block" : "hidden"}`}>
-              {collectionTypes &&
-                Object.entries(collectionTypes).map(([category, items]) => (
-                  <div key={category}>
-                    <div className="">
-                      <h3
-                        className="flex items-center justify-between font-medium mt-4 pl-2 mb-2 hover:text-primary duration-500 cursor-pointer bg-secondary border border-black rounded-sm shadow-md hover:shadow-lg"
-                        onClick={() => toggleCategory(category)} // Toggle the specific category
-                      >
-                        {category}
-                        <span
-                          className={`${
-                            categoryOpen[category] && "rotate-90"
-                          }`}
-                        >
-                          <IoIosArrowForward />
-                        </span>
-                      </h3>
-                    </div>
-                    <ul
-                      className={`${
-                        categoryOpen[category]
-                          ? "flex flex-col gap-1"
-                          : "hidden"
-                      }`}
+            {collectionTypes &&
+        collectionTypes.map((categoryObj, index) => (
+          <div key={index}>
+            {/* Dynamically extract category name and items */}
+            {Object.entries(categoryObj).map(([category, items]) => (
+              <div key={category}>
+                <h3
+                  className="flex items-center justify-between font-medium mt-4 pl-2 mb-2 hover:text-primary duration-500 cursor-pointer bg-secondary border border-black rounded-sm shadow-md hover:shadow-lg"
+                  onClick={() => toggleCategory(category)} // Toggle the specific category
+                >
+                  {category}
+                  <span
+                    className={`${
+                      categoryOpen[category] && "rotate-90"
+                    }`}
+                  >
+                    <IoIosArrowForward />
+                  </span>
+                </h3>
+                <ul
+                  className={`${
+                    categoryOpen[category] ? "flex flex-col gap-1" : "hidden"
+                  }`}
+                >
+                  {items.map((item, index) => (
+                    <li
+                      key={index}
+                      className="cursor-pointer ml-3 font-light text-gray-600 hover:text-gray-800 hover:scale-x-105 duration-500 ease-in-out"
+                      onClick={() => handleNavClick(`/collection/${item}`)}
                     >
-                      {items.map((item, index) => (
-                        <li
-                          key={index}
-                          className="cursor-pointer  ml-3 font-light text-gray-600 hover:text-gray-800 hover:scale-x-105 duration-500 ease-in-out "
-                          onClick={() => handleNavClick(`/collection/${item}`)}
-                        >
-                          {item}
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-                ))}
+                      {item}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ))}
+          </div>
+        ))}
             </div>
           </div>
 
@@ -171,7 +172,7 @@ const Sidebar = ({ toggleSidebar, isOpen, toggleLogin}) => {
         </div>
 
         {/* Close button */}
-        
+
       </div>
 
       {/* Overlay */}

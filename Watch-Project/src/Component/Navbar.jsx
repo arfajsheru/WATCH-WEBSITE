@@ -117,10 +117,10 @@ const Navbar = () => {
       />
 
       {/* Offer line */}
-      <div className="h-4 md:h-6 w-full bg-gradient-to-r from-red-500 to-red-700 text-center leading-6 md:leading-9 text-white font-bold uppercase text-xs md:text-xs flex items-center justify-center gap-2">
+      <div className="h-5 md:h-8 w-full bg-gray-300 text-center leading-6 md:leading-9 text-black font-bold uppercase text-xs md:text-xs flex items-center justify-center gap-2">
         <span className="text-yellow-200">🎉</span>
         <span>
-          Holiday Sale - <span className="text-yellow-300">35% OFF</span> Apple
+          Holiday Sale - <span className="text-red-600">35% OFF</span> Apple
           Brand
         </span>
         <span className="text-yellow-200">🔥</span>

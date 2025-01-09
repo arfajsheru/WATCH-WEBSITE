@@ -87,44 +87,46 @@ const Sidebar = ({ toggleSidebar, isOpen, toggleLogin}) => {
 
             <div className={`${collopen ? "block" : "hidden"}`}>
             {collectionTypes &&
-        collectionTypes.map((categoryObj, index) => (
-          <div key={index}>
-            {/* Dynamically extract category name and items */}
-            {Object.entries(categoryObj).map(([category, items]) => (
-              <div key={category}>
-                <h3
-                  className="flex items-center justify-between font-medium mt-4 pl-2 mb-2 hover:text-primary duration-500 cursor-pointer bg-secondary border border-black rounded-sm shadow-md hover:shadow-lg"
-                  onClick={() => toggleCategory(category)} // Toggle the specific category
+  collectionTypes.map((categoryObj, index) => (
+    <div key={index}>
+      {/* Dynamically extract category name and items */}
+      {Object.entries(categoryObj).map(([category, items]) =>
+        category !== "image" ? ( // Exclude 'image' key
+          <div key={category}>
+            <h3
+              className="flex items-center justify-between font-medium mt-4 pl-2 mb-2 hover:text-primary duration-500 cursor-pointer bg-secondary border border-black rounded-sm shadow-md hover:shadow-lg"
+              onClick={() => toggleCategory(category)} // Toggle the specific category
+            >
+              {category}
+              <span
+                className={`${
+                  categoryOpen[category] && "rotate-90"
+                }`}
+              >
+                <IoIosArrowForward />
+              </span>
+            </h3>
+            <ul
+              className={`${
+                categoryOpen[category] ? "flex flex-col gap-1" : "hidden"
+              }`}
+            >
+              {items.map((item, index) => (
+                <li
+                  key={index}
+                  className="cursor-pointer ml-3 font-light text-gray-600 hover:text-gray-800 hover:scale-x-105 duration-500 ease-in-out"
+                  onClick={() => handleNavClick(`/collection/${item}`)}
                 >
-                  {category}
-                  <span
-                    className={`${
-                      categoryOpen[category] && "rotate-90"
-                    }`}
-                  >
-                    <IoIosArrowForward />
-                  </span>
-                </h3>
-                <ul
-                  className={`${
-                    categoryOpen[category] ? "flex flex-col gap-1" : "hidden"
-                  }`}
-                >
-                  {items.map((item, index) => (
-                    <li
-                      key={index}
-                      className="cursor-pointer ml-3 font-light text-gray-600 hover:text-gray-800 hover:scale-x-105 duration-500 ease-in-out"
-                      onClick={() => handleNavClick(`/collection/${item}`)}
-                    >
-                      {item}
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            ))}
+                  {item}
+                </li>
+              ))}
+            </ul>
           </div>
-        ))}
-            </div>
+        ) : null // Skip rendering for 'image' key
+      )}
+    </div>
+  ))}
+ </div>
           </div>
 
           <div

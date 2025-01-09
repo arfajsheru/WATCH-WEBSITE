@@ -8,7 +8,7 @@ export const watchData = [
     price: 9995,
     original_price: 12995,
     offer: 23,
-    images: watch1,
+    // images: watch1,
   },
   {
     id: 2,
@@ -18,7 +18,7 @@ export const watchData = [
     price: 7995,
     original_price: 10995,
     offer: 27,
-    images: watch2,
+    // images: watch2,
   },
   {
     id: 3,
@@ -28,7 +28,7 @@ export const watchData = [
     price: 8495,
     original_price: 10995,
     offer: 23,
-    images: watch1,
+    // images: watch1,
   },
   {
     id: 4,
@@ -38,7 +38,7 @@ export const watchData = [
     price: 10995,
     original_price: 13995,
     offer: 21,
-    images: watch2,
+    // images: watch2,
   },
   {
     id: 5,
@@ -48,7 +48,7 @@ export const watchData = [
     price: 7495,
     original_price: 9995,
     offer: 25,
-    images: watch1,
+    // images: watch1,
   },
   {
     id: 6,
@@ -58,7 +58,7 @@ export const watchData = [
     price: 5995,
     original_price: 7995,
     offer: 20,
-    images: watch2,
+    // images: watch2,
   },
 
   // Rado - 6 items
@@ -70,7 +70,7 @@ export const watchData = [
     price: 19995,
     original_price: 24995,
     offer: 20,
-    images: watch1,
+    // images: watch1,
   },
   {
     id: 8,
@@ -80,7 +80,7 @@ export const watchData = [
     price: 24995,
     original_price: 31995,
     offer: 22,
-    images: watch2,
+    // images: watch2,
   },
   {
     id: 9,
@@ -90,7 +90,7 @@ export const watchData = [
     price: 17995,
     original_price: 22995,
     offer: 22,
-    images: watch1,
+    // images: watch1,
   },
   {
     id: 10,
@@ -100,7 +100,7 @@ export const watchData = [
     price: 15995,
     original_price: 20995,
     offer: 24,
-    images: watch2,
+    // images: watch2,
   },
   {
     id: 11,
@@ -110,7 +110,7 @@ export const watchData = [
     price: 13995,
     original_price: 17995,
     offer: 22,
-    images: watch1,
+    // images: watch1,
   },
   {
     id: 12,
@@ -120,7 +120,7 @@ export const watchData = [
     price: 8995,
     original_price: 11995,
     offer: 25,
-    images: watch2,
+    // images: watch2,
   },
 
   // Titan - 6 items
@@ -132,7 +132,7 @@ export const watchData = [
     price: 5995,
     original_price: 7995,
     offer: 25,
-    images: watch1,
+    // images: watch1,
   },
   {
     id: 14,
@@ -142,7 +142,7 @@ export const watchData = [
     price: 4995,
     original_price: 6495,
     offer: 23,
-    images: watch2,
+    // images: watch2,
   },
   {
     id: 15,
@@ -152,7 +152,7 @@ export const watchData = [
     price: 3495,
     original_price: 4495,
     offer: 22,
-    images: watch1,
+    // images: watch1,
   },
   {
     id: 16,
@@ -162,7 +162,7 @@ export const watchData = [
     price: 7995,
     original_price: 9995,
     offer: 20,
-    images: watch2,
+    // images: watch2,
   },
   {
     id: 17,
@@ -172,7 +172,7 @@ export const watchData = [
     price: 6495,
     original_price: 8495,
     offer: 23,
-    images: watch1,
+    // images: watch1,
   },
   {
     id: 18,
@@ -182,7 +182,7 @@ export const watchData = [
     price: 10995,
     original_price: 13995,
     offer: 21,
-    images: watch2,
+    // images: watch2,
   },
 
   // Fossil - 6 items
@@ -194,7 +194,7 @@ export const watchData = [
     price: 11995,
     original_price: 14995,
     offer: 20,
-    images: watch1,
+    // images: watch1,
   },
   {
     id: 20,
@@ -204,7 +204,7 @@ export const watchData = [
     price: 8995,
     original_price: 11995,
     offer: 25,
-    images: watch2,
+    // images: watch2,
   },
   {
     id: 21,
@@ -214,7 +214,7 @@ export const watchData = [
     price: 12995,
     original_price: 15995,
     offer: 19,
-    images: watch1,
+    // images: watch1,
   },
   {
     id: 22,
@@ -224,7 +224,7 @@ export const watchData = [
     price: 7995,
     original_price: 10995,
     offer: 27,
-    images: watch2,
+    // images: watch2,
   },
   {
     id: 23,
@@ -234,7 +234,7 @@ export const watchData = [
     price: 9995,
     original_price: 12995,
     offer: 23,
-    images: watch1,
+    // images: watch1,
   },
   {
     id: 24,
@@ -244,7 +244,7 @@ export const watchData = [
     price: 7995,
     original_price: 9995,
     offer: 20,
-    images: watch2,
+    // images: watch2,
   },
 
   // Casio - 6 items
@@ -256,7 +256,7 @@ export const watchData = [
     price: 7995,
     original_price: 9995,
     offer: 20,
-    images: watch1,
+    // images: watch1,
   },
   {
     id: 26,
@@ -266,7 +266,7 @@ export const watchData = [
     price: 6495,
     original_price: 8495,
     offer: 23,
-    images: watch2,
+    // images: watch2,
   },
   {
     id: 27,
@@ -276,7 +276,7 @@ export const watchData = [
     price: 9995,
     original_price: 12995,
     offer: 23,
-    images: watch1,
+    // images: watch1,
   },
   {
     id: 28,
@@ -286,7 +286,7 @@ export const watchData = [
     price: 5495,
     original_price: 7495,
     offer: 27,
-    images: watch2,
+    // images: watch2,
   },
   {
     id: 29,
@@ -296,7 +296,7 @@ export const watchData = [
     price: 8495,
     original_price: 10995,
     offer: 23,
-    images: watch1,
+    // images: watch1,
   },
   {
     id: 30,
@@ -306,7 +306,7 @@ export const watchData = [
     price: 7495,
     original_price: 9995,
     offer: 25,
-    images: watch2,
+    // images: watch2,
   },
   // Seiko - 6 items
   {
@@ -318,7 +318,7 @@ export const watchData = [
     original_price: 18995,
     offer: 21,
     bestSellers: true,
-    images: watch1,
+    // images: watch1,
   },
   {
     id: 32,
@@ -329,7 +329,7 @@ export const watchData = [
     original_price: 12995,
     offer: 23,
     bestSellers: false,
-    images: watch2,
+    // images: watch2,
   },
   {
     id: 33,
@@ -340,7 +340,7 @@ export const watchData = [
     original_price: 14995,
     offer: 20,
     bestSellers: true,
-    images: watch1,
+    // images: watch1,
   },
   {
     id: 34,
@@ -351,7 +351,7 @@ export const watchData = [
     original_price: 9995,
     offer: 20,
     bestSellers: false,
-    images: watch2,
+    // images: watch2,
   },
   {
     id: 35,
@@ -362,7 +362,7 @@ export const watchData = [
     original_price: 17995,
     offer: 22,
     bestSellers: true,
-    images: watch1,
+    // images: watch1,
   },
   {
     id: 36,
@@ -373,7 +373,7 @@ export const watchData = [
     original_price: 11995,
     offer: 25,
     bestSellers: false,
-    images: watch2,
+    // images: watch2,
   },
 
   // Timex - 6 items
@@ -386,7 +386,7 @@ export const watchData = [
     original_price: 6495,
     offer: 23,
     bestSellers: true,
-    images: watch1,
+    // images: watch1,
   },
   {
     id: 38,
@@ -397,7 +397,7 @@ export const watchData = [
     original_price: 5995,
     offer: 25,
     bestSellers: false,
-    images: watch2,
+    // images: watch2,
   },
   {
     id: 39,
@@ -408,7 +408,7 @@ export const watchData = [
     original_price: 9995,
     offer: 20,
     bestSellers: true,
-    images: watch1,
+    // images: watch1,
   },
   {
     id: 40,
@@ -419,7 +419,7 @@ export const watchData = [
     original_price: 7495,
     offer: 26,
     bestSellers: false,
-    images: watch2,
+    // images: watch2,
   },
   {
     id: 41,
@@ -430,7 +430,7 @@ export const watchData = [
     original_price: 4995,
     offer: 20,
     bestSellers: true,
-    images: watch1,
+    // images: watch1,
   },
   {
     id: 42,
@@ -441,7 +441,7 @@ export const watchData = [
     original_price: 8495,
     offer: 24,
     bestSellers: false,
-    images: watch2,
+    // images: watch2,
   },
 
   // Omega - 6 items
@@ -454,7 +454,7 @@ export const watchData = [
     original_price: 58995,
     offer: 22,
     bestSellers: true,
-    images: watch1,
+    // images: watch1,
   },
   {
     id: 44,
@@ -465,7 +465,7 @@ export const watchData = [
     original_price: 49995,
     offer: 20,
     bestSellers: false,
-    images: watch2,
+    // images: watch2,
   },
   {
     id: 45,
@@ -476,7 +476,7 @@ export const watchData = [
     original_price: 69995,
     offer: 23,
     bestSellers: true,
-    images: watch1,
+    // images: watch1,
   },
   {
     id: 46,
@@ -487,7 +487,7 @@ export const watchData = [
     original_price: 31995,
     offer: 22,
     bestSellers: false,
-    images: watch2,
+    // images: watch2,
   },
   {
     id: 47,
@@ -498,7 +498,7 @@ export const watchData = [
     original_price: 75995,
     offer: 20,
     bestSellers: true,
-    images: watch1,
+    // images: watch1,
   },
   {
     id: 48,
@@ -509,7 +509,7 @@ export const watchData = [
     original_price: 58995,
     offer: 24,
     bestSellers: false,
-    images: watch2,
+    // images: watch2,
   },
   {
     id: 49,
@@ -520,7 +520,7 @@ export const watchData = [
     original_price: 7995,
     offer: 25,
     bestSellers: true,
-    images: watch1,
+    // images: watch1,
   },
   {
     id: 50,
@@ -531,7 +531,7 @@ export const watchData = [
     original_price: 9995,
     offer: 20,
     bestSellers: false,
-    images: watch2,
+    // images: watch2,
   },
   {
     id: 51,
@@ -542,7 +542,7 @@ export const watchData = [
     original_price: 4995,
     offer: 20,
     bestSellers: true,
-    images: watch1,
+    // images: watch1,
   },
   {
     id: 52,
@@ -553,7 +553,7 @@ export const watchData = [
     original_price: 12995,
     offer: 30,
     bestSellers: true,
-    images: watch2,
+    // images: watch2,
   },
   {
     id: 53,
@@ -564,7 +564,7 @@ export const watchData = [
     original_price: 4495,
     offer: 22,
     bestSellers: false,
-    images: watch1,
+    // images: watch1,
   },
   {
     id: 54,
@@ -575,7 +575,7 @@ export const watchData = [
     original_price: 13995,
     offer: 21,
     bestSellers: true,
-    images: watch2,
+    // images: watch2,
   },
 
   // Women - 6 items
@@ -588,7 +588,7 @@ export const watchData = [
     original_price: 9995,
     offer: 20,
     bestSellers: true,
-    images: watch1,
+    // images: watch1,
   },
   {
     id: 56,
@@ -599,7 +599,7 @@ export const watchData = [
     original_price: 8995,
     offer: 25,
     bestSellers: false,
-    images: watch2,
+    // images: watch2,
   },
   {
     id: 57,
@@ -610,7 +610,7 @@ export const watchData = [
     original_price: 7495,
     offer: 27,
     bestSellers: true,
-    images: watch1,
+    // images: watch1,
   },
   {
     id: 58,
@@ -621,7 +621,7 @@ export const watchData = [
     original_price: 15995,
     offer: 19,
     bestSellers: false,
-    images: watch2,
+    // images: watch2,
   },
   {
     id: 59,
@@ -632,7 +632,7 @@ export const watchData = [
     original_price: 8495,
     offer: 24,
     bestSellers: true,
-    images: watch1,
+    // images: watch1,
   },
   {
     id: 60,
@@ -643,7 +643,7 @@ export const watchData = [
     original_price: 6495,
     offer: 23,
     bestSellers: false,
-    images: watch2,
+    // images: watch2,
   },
 
   // Unisex - 6 items
@@ -656,7 +656,7 @@ export const watchData = [
     original_price: 4995,
     offer: 20,
     bestSellers: true,
-    images: watch1,
+    // images: watch1,
   },
   {
     id: 62,
@@ -667,7 +667,7 @@ export const watchData = [
     original_price: 3995,
     offer: 25,
     bestSellers: true,
-    images: watch2,
+    // images: watch2,
   },
   {
     id: 63,
@@ -678,7 +678,7 @@ export const watchData = [
     original_price: 8495,
     offer: 24,
     bestSellers: false,
-    images: watch1,
+    // images: watch1,
   },
   {
     id: 64,
@@ -689,7 +689,7 @@ export const watchData = [
     original_price: 9995,
     offer: 20,
     bestSellers: true,
-    images: watch2,
+    // images: watch2,
   },
   {
     id: 65,
@@ -700,7 +700,7 @@ export const watchData = [
     original_price: 6495,
     offer: 23,
     bestSellers: false,
-    images: watch1,
+    // images: watch1,
   },
   {
     id: 66,
@@ -711,7 +711,7 @@ export const watchData = [
     original_price: 14995,
     offer: 20,
     bestSellers: true,
-    images: watch2,
+    // images: watch2,
   },
 
   // Boys - 6 items
@@ -724,7 +724,7 @@ export const watchData = [
     original_price: 3495,
     offer: 20,
     bestSellers: true,
-    images: watch1,
+    // images: watch1,
   },
   {
     id: 68,
@@ -735,7 +735,7 @@ export const watchData = [
     original_price: 2995,
     offer: 33,
     bestSellers: false,
-    images: watch2,
+    // images: watch2,
   },
   {
     id: 69,
@@ -746,7 +746,7 @@ export const watchData = [
     original_price: 2495,
     offer: 40,
     bestSellers: true,
-    images: watch1,
+    // images: watch1,
   },
   {
     id: 70,
@@ -757,7 +757,7 @@ export const watchData = [
     original_price: 3995,
     offer: 25,
     bestSellers: false,
-    images: watch2,
+    // images: watch2,
   },
   {
     id: 71,
@@ -768,7 +768,7 @@ export const watchData = [
     original_price: 3495,
     offer: 28,
     bestSellers: true,
-    images: watch1,
+    // images: watch1,
   },
   {
     id: 72,
@@ -779,7 +779,7 @@ export const watchData = [
     original_price: 2495,
     offer: 20,
     bestSellers: false,
-    images: watch2,
+    // images: watch2,
   },
 
   // Girls - 6 items
@@ -792,7 +792,7 @@ export const watchData = [
     original_price: 3995,
     offer: 25,
     bestSellers: true,
-    images: watch1,
+    // images: watch1,
   },
   {
     id: 74,
@@ -803,7 +803,7 @@ export const watchData = [
     original_price: 3495,
     offer: 28,
     bestSellers: false,
-    images: watch2,
+    // images: watch2,
   },
   {
     id: 75,
@@ -814,7 +814,7 @@ export const watchData = [
     original_price: 4995,
     offer: 20,
     bestSellers: true,
-    images: watch1,
+    // images: watch1,
   },
   {
     id: 76,
@@ -825,7 +825,7 @@ export const watchData = [
     original_price: 3495,
     offer: 28,
     bestSellers: false,
-    images: watch2,
+    // images: watch2,
   },
   {
     id: 77,
@@ -836,7 +836,7 @@ export const watchData = [
     original_price: 2995,
     offer: 33,
     bestSellers: true,
-    images: watch1,
+    // images: watch1,
   },
   {
     id: 78,
@@ -847,7 +847,7 @@ export const watchData = [
     original_price: 3495,
     offer: 28,
     bestSellers: false,
-    images: watch2,
+    // images: watch2,
   },
 
   // Gold - 6 items
@@ -860,7 +860,7 @@ export const watchData = [
     original_price: 11995,
     offer: 25,
     bestSellers: true,
-    images: bracelet1,
+    // images: bracelet1,
   },
   {
     id: 80,
@@ -871,7 +871,7 @@ export const watchData = [
     original_price: 17995,
     offer: 17,
     bestSellers: false,
-    images: bracelet2,
+    // images: bracelet2,
   },
   {
     id: 81,
@@ -882,7 +882,7 @@ export const watchData = [
     original_price: 6495,
     offer: 23,
     bestSellers: true,
-    images: bracelet1,
+    // images: bracelet1,
   },
   {
     id: 82,
@@ -893,7 +893,7 @@ export const watchData = [
     original_price: 7495,
     offer: 20,
     bestSellers: false,
-    images: bracelet2,
+    // images: bracelet2,
   },
   {
     id: 83,
@@ -904,7 +904,7 @@ export const watchData = [
     original_price: 8995,
     offer: 16,
     bestSellers: true,
-    images: bracelet1,
+    // images: bracelet1,
   },
   {
     id: 84,
@@ -915,7 +915,7 @@ export const watchData = [
     original_price: 4995,
     offer: 20,
     bestSellers: false,
-    images: bracelet2,
+    // images: bracelet2,
   },
 
   // Silver - 6 items
@@ -928,7 +928,7 @@ export const watchData = [
     original_price: 9995,
     offer: 25,
     bestSellers: true,
-    images: bracelet2,
+    // images: bracelet2,
   },
   {
     id: 86,
@@ -939,7 +939,7 @@ export const watchData = [
     original_price: 12995,
     offer: 23,
     bestSellers: false,
-    images: bracelet1,
+    // images: bracelet1,
   },
   {
     id: 87,
@@ -950,7 +950,7 @@ export const watchData = [
     original_price: 6995,
     offer: 21,
     bestSellers: true,
-    images: bracelet2,
+    // images: bracelet2,
   },
   {
     id: 88,
@@ -961,7 +961,7 @@ export const watchData = [
     original_price: 10995,
     offer: 22,
     bestSellers: false,
-    images: bracelet1,
+    // images: bracelet1,
   },
   {
     id: 89,
@@ -972,7 +972,7 @@ export const watchData = [
     original_price: 5995,
     offer: 25,
     bestSellers: true,
-    images: bracelet2,
+    // images: bracelet2,
   },
   {
     id: 90,
@@ -983,7 +983,7 @@ export const watchData = [
     original_price: 3495,
     offer: 29,
     bestSellers: false,
-    images: bracelet1,
+    // images: bracelet1,
   },
 
   // Platinum - 6 items
@@ -996,7 +996,7 @@ export const watchData = [
     original_price: 23995,
     offer: 16,
     bestSellers: true,
-    images: bracelet1,
+    // images: bracelet1,
   },
   {
     id: 92,
@@ -1007,7 +1007,7 @@ export const watchData = [
     original_price: 17995,
     offer: 17,
     bestSellers: false,
-    images: bracelet2,
+    // images: bracelet2,
   },
   {
     id: 93,
@@ -1018,7 +1018,7 @@ export const watchData = [
     original_price: 20995,
     offer: 14,
     bestSellers: true,
-    images: bracelet1,
+    // images: bracelet1,
   },
   {
     id: 94,
@@ -1029,7 +1029,7 @@ export const watchData = [
     original_price: 27995,
     offer: 11,
     bestSellers: false,
-    images: bracelet2,
+    // images: bracelet2,
   },
   {
     id: 95,
@@ -1040,7 +1040,7 @@ export const watchData = [
     original_price: 39995,
     offer: 12,
     bestSellers: true,
-    images: bracelet1,
+    // images: bracelet1,
   },
   {
     id: 96,
@@ -1051,7 +1051,7 @@ export const watchData = [
     original_price: 24995,
     offer: 15,
     bestSellers: false,
-    images: bracelet2,
+    // images: bracelet2,
   },
 
   // Leather - 6 items
@@ -1064,7 +1064,7 @@ export const watchData = [
     original_price: 3495,
     offer: 29,
     bestSellers: true,
-    images: bracelet2,
+    // images: bracelet2,
   },
   {
     id: 98,
@@ -1075,7 +1075,7 @@ export const watchData = [
     original_price: 1995,
     offer: 25,
     bestSellers: false,
-    images: bracelet1,
+    // images: bracelet1,
   },
   {
     id: 99,
@@ -1086,7 +1086,7 @@ export const watchData = [
     original_price: 2495,
     offer: 20,
     bestSellers: true,
-    images: bracelet2,
+    // images: bracelet2,
   },
   {
     id: 100,
@@ -1097,7 +1097,7 @@ export const watchData = [
     original_price: 3995,
     offer: 25,
     bestSellers: false,
-    images: bracelet1,
+    // images: bracelet1,
   },
   {
     id: 101,
@@ -1108,7 +1108,7 @@ export const watchData = [
     original_price: 2295,
     offer: 22,
     bestSellers: true,
-    images: bracelet2,
+    // images: bracelet2,
   },
   {
     id: 102,
@@ -1119,7 +1119,7 @@ export const watchData = [
     original_price: 1995,
     offer: 20,
     bestSellers: false,
-    images: bracelet1,
+    // images: bracelet1,
   },
 
   // Beads - 6 items
@@ -1132,7 +1132,7 @@ export const watchData = [
     original_price: 1995,
     offer: 25,
     bestSellers: true,
-    images: bracelet1,
+    // images: bracelet1,
   },
   {
     id: 104,
@@ -1143,7 +1143,7 @@ export const watchData = [
     original_price: 3995,
     offer: 25,
     bestSellers: false,
-    images: bracelet2,
+    // images: bracelet2,
   },
   {
     id: 105,
@@ -1154,7 +1154,7 @@ export const watchData = [
     original_price: 3295,
     offer: 24,
     bestSellers: true,
-    images: bracelet1,
+    // images: bracelet1,
   },
   {
     id: 106,
@@ -1165,7 +1165,7 @@ export const watchData = [
     original_price: 1995,
     offer: 20,
     bestSellers: false,
-    images: bracelet2,
+    // images: bracelet2,
   },
   {
     id: 107,
@@ -1176,7 +1176,7 @@ export const watchData = [
     original_price: 2295,
     offer: 22,
     bestSellers: true,
-    images: bracelet1,
+    // images: bracelet1,
   },
   {
     id: 108,
@@ -1187,7 +1187,7 @@ export const watchData = [
     original_price: 2995,
     offer: 17,
     bestSellers: false,
-    images: bracelet2,
+    // images: bracelet2,
   },
 
   // Metal - 6 items
@@ -1200,7 +1200,7 @@ export const watchData = [
     original_price: 4995,
     offer: 20,
     bestSellers: true,
-    images: bracelet2,
+    // images: bracelet2,
   },
   {
     id: 110,
@@ -1211,7 +1211,7 @@ export const watchData = [
     original_price: 3995,
     offer: 25,
     bestSellers: false,
-    images: bracelet1,
+    // images: bracelet1,
   },
   {
     id: 111,
@@ -1222,7 +1222,7 @@ export const watchData = [
     original_price: 2995,
     offer: 17,
     bestSellers: true,
-    images: bracelet2,
+    // images: bracelet2,
   },
   {
     id: 112,
@@ -1233,7 +1233,7 @@ export const watchData = [
     original_price: 5495,
     offer: 18,
     bestSellers: false,
-    images: bracelet1,
+    // images: bracelet1,
   },
   {
     id: 113,
@@ -1244,7 +1244,7 @@ export const watchData = [
     original_price: 4295,
     offer: 19,
     bestSellers: true,
-    images: bracelet2,
+    // images: bracelet2,
   },
   {
     id: 114,
@@ -1255,7 +1255,7 @@ export const watchData = [
     original_price: 2495,
     offer: 20,
     bestSellers: false,
-    images: bracelet1,
+    // images: bracelet1,
   },
   // Steel - 6 items
   {
@@ -1267,7 +1267,7 @@ export const watchData = [
     original_price: 4995,
     offer: 20,
     bestSellers: true,
-    images: bracelet1,
+    // images: bracelet1,
   },
   {
     id: 116,
@@ -1278,7 +1278,7 @@ export const watchData = [
     original_price: 3995,
     offer: 25,
     bestSellers: false,
-    images: bracelet2,
+    // images: bracelet2,
   },
   {
     id: 117,
@@ -1289,7 +1289,7 @@ export const watchData = [
     original_price: 3495,
     offer: 28,
     bestSellers: true,
-    images: bracelet1,
+    // images: bracelet1,
   },
   {
     id: 118,
@@ -1300,7 +1300,7 @@ export const watchData = [
     original_price: 3795,
     offer: 21,
     bestSellers: false,
-    images: bracelet2,
+    // images: bracelet2,
   },
   {
     id: 119,
@@ -1311,7 +1311,7 @@ export const watchData = [
     original_price: 5495,
     offer: 18,
     bestSellers: true,
-    images: bracelet1,
+    // images: bracelet1,
   },
   {
     id: 120,
@@ -1322,7 +1322,7 @@ export const watchData = [
     original_price: 4395,
     offer: 20,
     bestSellers: false,
-    images: bracelet2,
+    // images: bracelet2,
   },
 
   // Round - 2 items
@@ -1335,7 +1335,7 @@ export const watchData = [
     original_price: 7995,
     offer: 25,
     bestSellers: true,
-    images: shape1,
+    // images: shape1,
   },
   {
     id: 86,
@@ -1346,7 +1346,7 @@ export const watchData = [
     original_price: 4995,
     offer: 20,
     bestSellers: false,
-    images: shape2,
+    // images: shape2,
   },
 
   // Square - 2 items
@@ -1359,7 +1359,7 @@ export const watchData = [
     original_price: 9995,
     offer: 20,
     bestSellers: true,
-    images: shape3,
+    // images: shape3,
   },
   {
     id: 88,
@@ -1370,7 +1370,7 @@ export const watchData = [
     original_price: 6495,
     offer: 23,
     bestSellers: false,
-    images: shape4,
+    // images: shape4,
   },
 
   // Rectangular - 2 items
@@ -1383,7 +1383,7 @@ export const watchData = [
     original_price: 13995,
     offer: 21,
     bestSellers: true,
-    images: shape5,
+    // images: shape5,
   },
   {
     id: 90,
@@ -1394,7 +1394,7 @@ export const watchData = [
     original_price: 3995,
     offer: 25,
     bestSellers: false,
-    images: shape6,
+    // images: shape6,
   },
 
   // Oval - 2 items
@@ -1407,7 +1407,7 @@ export const watchData = [
     original_price: 9995,
     offer: 20,
     bestSellers: true,
-    images: shape7,
+    // images: shape7,
   },
   {
     id: 92,
@@ -1418,7 +1418,7 @@ export const watchData = [
     original_price: 5995,
     offer: 25,
     bestSellers: false,
-    images: shape8,
+    // images: shape8,
   },
 
   // Hexagonal - 2 items
@@ -1431,7 +1431,7 @@ export const watchData = [
     original_price: 7995,
     offer: 25,
     bestSellers: true,
-    images: shape9,
+    // images: shape9,
   },
   {
     id: 94,
@@ -1442,7 +1442,7 @@ export const watchData = [
     original_price: 4995,
     offer: 20,
     bestSellers: false,
-    images: shape10,
+    // images: shape10,
   },
 
   // Diamond - 2 items
@@ -1455,7 +1455,7 @@ export const watchData = [
     original_price: 31995,
     offer: 22,
     bestSellers: true,
-    images: shape11,
+    // images: shape11,
   },
   {
     id: 96,
@@ -1466,7 +1466,7 @@ export const watchData = [
     original_price: 19995,
     offer: 25,
     bestSellers: false,
-    images: shape12,
+    // images: shape12,
   },
 
   // Tonneau - 2 items
@@ -1479,7 +1479,7 @@ export const watchData = [
     original_price: 19995,
     offer: 20,
     bestSellers: true,
-    images: shape13,
+    // images: shape13,
   },
   {
     id: 98,
@@ -1490,7 +1490,7 @@ export const watchData = [
     original_price: 9995,
     offer: 25,
     bestSellers: false,
-    images: shape14,
+    // images: shape14,
   },
 
   // Apple - 2 items
@@ -1503,7 +1503,7 @@ export const watchData = [
     original_price: 49995,
     offer: 20,
     bestSellers: true,
-    images: smartWatch1,
+    // images: smartWatch1,
   },
   {
     id: 100,
@@ -1514,7 +1514,7 @@ export const watchData = [
     original_price: 32995,
     offer: 18,
     bestSellers: false,
-    images: smartWatch2,
+    // images: smartWatch2,
   },
 
   // Samsung - 2 items
@@ -1527,7 +1527,7 @@ export const watchData = [
     original_price: 35995,
     offer: 17,
     bestSellers: true,
-    images: smartWatch3,
+    // images: smartWatch3,
   },
   {
     id: 102,
@@ -1538,7 +1538,7 @@ export const watchData = [
     original_price: 31995,
     offer: 19,
     bestSellers: false,
-    images: smartWatch4,
+    // images: smartWatch4,
   },
 
   // Garmin - 2 items
@@ -1551,7 +1551,7 @@ export const watchData = [
     original_price: 59995,
     offer: 17,
     bestSellers: true,
-    images: smartWatch5,
+    // images: smartWatch5,
   },
   {
     id: 104,
@@ -1562,7 +1562,7 @@ export const watchData = [
     original_price: 45995,
     offer: 13,
     bestSellers: false,
-    images: smartWatch6,
+    // images: smartWatch6,
   },
 
   // Fitbit - 2 items
@@ -1575,7 +1575,7 @@ export const watchData = [
     original_price: 17995,
     offer: 17,
     bestSellers: true,
-    images: smartWatch7,
+    // images: smartWatch7,
   },
   {
     id: 106,
@@ -1586,7 +1586,7 @@ export const watchData = [
     original_price: 25995,
     offer: 15,
     bestSellers: false,
-    images: smartWatch8,
+    // images: smartWatch8,
   },
 
   // Fossil - 2 items
@@ -1599,7 +1599,7 @@ export const watchData = [
     original_price: 27995,
     offer: 18,
     bestSellers: true,
-    images: smartWatch9,
+    // images: smartWatch9,
   },
   {
     id: 108,
@@ -1610,7 +1610,7 @@ export const watchData = [
     original_price: 18995,
     offer: 21,
     bestSellers: false,
-    images: smartWatch10,
+    // images: smartWatch10,
   },
 
   // Huawei - 2 items
@@ -1623,7 +1623,7 @@ export const watchData = [
     original_price: 29995,
     offer: 17,
     bestSellers: true,
-    images: smartWatch11,
+    // images: smartWatch11,
   },
   {
     id: 110,
@@ -1634,7 +1634,7 @@ export const watchData = [
     original_price: 11995,
     offer: 25,
     bestSellers: false,
-    images: smartWatch12,
+    // images: smartWatch12,
   },
 
   // Amazfit - 2 items
@@ -1647,7 +1647,7 @@ export const watchData = [
     original_price: 19995,
     offer: 15,
     bestSellers: true,
-    images: smartWatch13,
+    // images: smartWatch13,
   },
   {
     id: 112,
@@ -1658,7 +1658,7 @@ export const watchData = [
     original_price: 6495,
     offer: 23,
     bestSellers: false,
-    images: smartWatch14,
+    // images: smartWatch14,
   },
 
   // Realme - 2 items
@@ -1671,7 +1671,7 @@ export const watchData = [
     original_price: 6495,
     offer: 23,
     bestSellers: true,
-    images: smartWatch15,
+    // images: smartWatch15,
   },
   {
     id: 114,
@@ -1682,6 +1682,6 @@ export const watchData = [
     original_price: 9995,
     offer: 20,
     bestSellers: false,
-    images: smartWatch16,
+    // images: smartWatch16,
   },
 ];

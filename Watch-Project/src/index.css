@@ -19,21 +19,20 @@
 
 /* Scrollbar base */
 ::-webkit-scrollbar {
-  width: 12px;  /* Increased width for better visibility */
+  width: 9px;  /* Increased width for better visibility */
   height: 12px; /* Height for horizontal scrollbar (if needed) */
 }
 
 /* Scrollbar track (the empty space the thumb moves along) */
 ::-webkit-scrollbar-track {
-  background: #f1f1f1; /* Lighter track color */
-  border-radius: 10px;  /* Rounded corners */
+  background: #d6e6ff; /* Lighter track color */
   box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1); /* Light shadow inside the track */
 }
 
 /* Scrollbar thumb (the draggable part of the scrollbar) */
 ::-webkit-scrollbar-thumb {
-  background-color: #4e91d0;  /* Primary color (Light Blue) */
-  border-radius: 10px;  /* Rounded corners */
+  background-color: #c54628;  /* Primary color (Light Blue) */
+  border-radius: 5px;  /* Rounded corners */
   border: 3px solid #c3e0f3;  /* Lighter secondary color as border */
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.2); /* Shadow effect for thumb */
 }

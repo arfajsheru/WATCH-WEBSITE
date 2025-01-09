@@ -4,8 +4,15 @@ import { IoIosArrowForward } from "react-icons/io";
 import { Link } from "react-router";
 import hero from "../assets/hero.jpg";
 import { collectionTypes } from "../data/collectiondata";
+import { watchData } from "../data/watchesdata";
 
 const Collection = () => {
+  const getCategory = (cate) => {
+    let category = watchData.filter((item) => item.category === cate);
+    return category.length
+  };
+
+
   return (
     <div className="mb-10 animate-open mx-3 flex flex-col items-center">
       <div className="relative py-3 sm:py-4 rounded-lg overflow-hidden">
@@ -39,24 +46,27 @@ const Collection = () => {
         {/* Category items  */}
         <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-10 mt-4 md:mt-9 lg:w-[80%]">
           {collectionTypes.map(({ image, ...categories }, index) => (
-            <div
-              key={index}
-              className="flex flex-col gap-3 items-center"
-            >
+            <div key={index} className="flex flex-col gap-3 items-center">
               {/* Category Image */}
-              <img src={image} alt="Category" className="w-full h-full object-cover" />
+              <img
+                src={image}
+                alt="Category"
+                className="w-full h-full object-cover"
+              />
 
               {/* Loop through categories */}
               {Object.keys(categories).map((key) => (
+                <div className="flex flex-col items-center">
                 <h2
                   key={key}
                   className="text-2xl uppercase text-center font-font4 text-gray-800"
                 >
                   {key}
                 </h2>
-                
+                <span className="text-center">{getCategory(key)} Item</span>
+                </div>
               ))}
-              <span>23 Items</span>
+              
               <button className="px-4 py-2 text-center uppercase text-white bg-secondary rounded-sm font-font4 border-2 border-gray-700">
                 view more product
               </button>

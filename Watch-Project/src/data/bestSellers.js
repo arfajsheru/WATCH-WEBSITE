@@ -150,5 +150,38 @@ export const bestSellers = [
     bestSellers: true,
     images: [brand6, brand6_6],
   },
+
+  
 ];
 
+
+/*
+Watches
+Florence
+Full Moon
+Gates Of Time
+Judaica
+Minstrel
+Mosaic
+Porthole
+Bracelets
+Rio
+Wave
+Cornett
+Ponte Vecchio
+Smart Watch Bands
+Apple Watch Bands
+Material
+Brass
+Silver
+Copper
+Multi
+Men
+Women
+Unisex
+Round
+Rectangular
+Brand
+Timex
+
+*/

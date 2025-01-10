@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { BiMenu } from "react-icons/bi";
 import { FaCartArrowDown, FaLeaf } from "react-icons/fa";
 import { IoSearch } from "react-icons/io5";
@@ -10,6 +10,7 @@ import AboutsOption from "../Navigation/AboutsOption";
 import CollectionOption from "../Navigation/CollectionOption";
 import Login from "./Login";
 import SearchModal from "./SearchModel";
+import OfferLine from "./OfferLine";
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [searchIsOpen, setSearchIsOpen] = useState(false);
@@ -26,6 +27,22 @@ const Navbar = () => {
   const toggleSearchModal = () => {
     setSearchIsOpen((prev) => !prev);
   };
+
+    const offers = [
+      "Holiday Sale - 35% OFF Apple Brand 🎉🔥",
+      "Exclusive Deal - Buy 1 Get 1 Free on All Accessories 🎁✨",
+      "Flash Sale - Upto 50% OFF on Electronics ⚡💥",
+    ];
+  
+    const [currentOfferIndex, setCurrentOfferIndex] = useState(0);
+  
+    useEffect(() => {
+      const interval = setInterval(() => {
+        setCurrentOfferIndex((prevIndex) => (prevIndex + 1) % offers.length);
+      }, 2000); // 5 seconds
+  
+      return () => clearInterval(interval); // Cleanup interval on component unmount
+    }, [offers.length]);
 
   return (
     <>
@@ -103,7 +120,7 @@ const Navbar = () => {
               <FaCartArrowDown className="duration-1000 cursor-pointer text-xl md:text-2xl" />
             </span>
             <div className="absolute -top-1 -right-1 bg-red-500 text-white text-xs sm:text-sm rounded-full h-4 w-4 sm:h-5 sm:w-5 flex items-center justify-center">
-              9
+              1
             </div>
           </NavLink>
         </div>
@@ -117,14 +134,7 @@ const Navbar = () => {
       />
 
       {/* Offer line */}
-      <div className="h-5 md:h-8 w-full bg-gray-300 text-center leading-6 md:leading-9 text-black font-bold uppercase text-xs md:text-xs flex items-center justify-center gap-2">
-        <span className="text-yellow-200">🎉</span>
-        <span>
-          Holiday Sale - <span className="text-red-600">35% OFF</span> Apple
-          Brand
-        </span>
-        <span className="text-yellow-200">🔥</span>
-      </div>
+      <OfferLine />
 
       {showLogin && <Login toggleLogin={toggleLogin} />}
 
